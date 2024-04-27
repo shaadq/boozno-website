@@ -1,0 +1,43 @@
+.bg-purple-img {
+  background-image: url(../../../assets/img/Home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.homepage-section1-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 56px;
+  }
+
+  .homesection-bottom-utils-wrapper {
+    display: flex;
+  }
+
+  .btns-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage-section1-wrapper {
+    h1 {
+      font-size: 36px;
+    }
+    .homesection-bottom-utils-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

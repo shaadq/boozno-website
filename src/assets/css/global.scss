@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Red Hat Regular";
+  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Bold";
+  src: url("../font/red-hat-display/RedHatDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Light";
+  src: url("../font/red-hat-display/RedHatDisplay-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Italic";
+  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "Red Hat Regular", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Red Hat Bold", sans-serif;
+}
+
+.btn-secondary {
+  background-color: #0cddd9;
+  border-color: #0cddd9;
+}
+.btn-secondary:hover {
+  background-color: #0cdddac2;
+  border-color: #0cdddac2;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-dark-blue {
+  color: #20184e;
+}
+.border-rad-45 {
+  border-radius: 45px;
+}
+.margin-top-minus88 {
+  margin-top: -88px;
+}
+.custom-btn {
+  padding: 10px 40px;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}

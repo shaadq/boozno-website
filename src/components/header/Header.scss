@@ -1,0 +1,58 @@
+header {
+  //   background-color: purple;
+  height: 88px;
+  z-index: 99;
+  .header-logo {
+    // width: 100px;
+  }
+  .header-components {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .header-component-item {
+      margin-left: 30px;
+    }
+  }
+  .header-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .item {
+      margin: 0 15px;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+  .talk-to-sales-wrapper {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+  }
+}
+.header-menu-ofcanvas {
+}
+// .header-menu-ofcanvas {
+.header-menu-offcanvas {
+  width: 85% !important;
+  border-radius: 20px 0 0 20px;
+}
+// }
+
+@media screen and (max-width: 768px) {
+  header {
+    .logo-wrapper {
+      svg {
+        width: 100%;
+      }
+    }
+
+    .header-components {
+      .header-component-item {
+        margin-left: 10px;
+      }
+    }
+  }
+}
