@@ -1,0 +1,59 @@
+footer {
+  .bg-blue {
+    background-color: #1e1b26;
+  }
+  .bg-dark-blue {
+    background-color: #17151e;
+  }
+  .footer-link-title {
+    font-family: "Red Hat Semi-bold", sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .footer-links {
+    .item {
+      margin-bottom: 9px;
+    }
+    .item:hover {
+      color: #ffffffd4;
+      cursor: pointer;
+    }
+  }
+  .footer-socialmedia-items {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    .item {
+      margin-right: 22px;
+    }
+  }
+
+  .footer-subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ffffff5d;
+    border-radius: 45px;
+    width: fit-content;
+    background-color: #25212e;
+    padding: 5px;
+    width: 100%;
+    input {
+      width: 100%;
+      color: #ffffff5d;
+      padding: 0 15px 0 15px;
+      border: none;
+      background-color: #25212e;
+    }
+    input:focus {
+      box-shadow: none;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      border-radius: 45px;
+      padding: 10px 20px;
+    }
+  }
+}

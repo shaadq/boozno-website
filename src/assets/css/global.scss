@@ -8,6 +8,11 @@
   src: url("../font/red-hat-display/RedHatDisplay-Bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Red Hat Semi-bold";
+  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf")
+    format("truetype");
+}
+@font-face {
   font-family: "Red Hat Light";
   src: url("../font/red-hat-display/RedHatDisplay-Light.ttf") format("truetype");
 }
@@ -28,7 +33,20 @@ h5,
 h6 {
   font-family: "Red Hat Bold", sans-serif;
 }
-
+.btn-primary {
+  background-color: #7d63ec;
+  border-color: #7d63ec;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #7c63ecb6 !important;
+  border-color: #7c63ecb6 !important;
+}
+.btn-primary:hover {
+  background-color: #7c63ecb6;
+  border-color: #7c63ecb6;
+}
 .btn-secondary {
   background-color: #0cddd9;
   border-color: #0cddd9;
@@ -39,6 +57,12 @@ h6 {
 }
 .text-white {
   color: #ffffff;
+}
+.text-light {
+  color: #adabb7ab !important;
+}
+.fs-18 {
+  font-size: 18px;
 }
 .text-dark-blue {
   color: #20184e;
@@ -54,4 +78,30 @@ h6 {
 }
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.section-title {
+  font-size: 36px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.section-subtitle {
+  font-family: "Red Hat Semi-bold", sans-serif;
+  text-align: center;
+  color: #666666;
+}
+.bg-beige {
+  background-color: #fff7ea;
+}
+.bg-light-blue {
+  background-color: #dff7fc;
+}
+.bg-purple {
+  background-color: #ededff;
+}
+.view-plan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 45px;
+  padding: 7px 20px;
 }

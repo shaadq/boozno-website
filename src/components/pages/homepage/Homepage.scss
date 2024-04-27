@@ -1,11 +1,11 @@
 .bg-purple-img {
   background-image: url(../../../assets/img/Home.png);
+  // background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-
 .homepage-section1-wrapper {
   height: 100%;
   display: flex;
@@ -16,17 +16,66 @@
   h1 {
     font-size: 56px;
   }
-
   .homesection-bottom-utils-wrapper {
     display: flex;
   }
-
   .btns-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
   }
+}
+.collection-sales-card {
+  height: 100%;
+  padding: 15px 20px;
+  border: 1px solid #f8f8f8;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+
+  h5 {
+    color: #20184e;
+  }
+  p {
+    color: #666666;
+  }
+}
+.collection-sales-card:hover {
+  border: 1px solid #875eea;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.homepage-plan-card {
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  .view-plan-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.view-plan-bg-img {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-image: url(http://localhost:3000/static/media/view-plans-img.de5029ac04bbedc6e2bf.png);
+  background-size: cover;
+  background-position: right top;
+  border-radius: 18px;
+  height: 100%;
+  padding: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
 }
 
 @media screen and (max-width: 768px) {
