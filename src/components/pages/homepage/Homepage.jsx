@@ -80,7 +80,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="">
         <section className="bg-purple-img">
           <div className="homepage-section1-wrapper">
@@ -239,7 +239,7 @@ const Homepage = () => {
         <RightAnswer />
         {/* FAQ Section End */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
