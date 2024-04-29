@@ -14,6 +14,7 @@ import FAQ from "../../common/faq/FAQ";
 import RightAnswer from "../../common/right-answer/RightAnswer";
 import Header from "../../header/Header";
 import Footer from "../../footer/Footer";
+import OwlCarousel from "react-owl-carousel";
 
 const Homepage = () => {
   let salesList = [
@@ -65,6 +66,18 @@ const Homepage = () => {
     },
   ];
 
+  const chunkArray = (arr, size) => {
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
+      result.push(arr.slice(i, i + size));
+    }
+    return result;
+  };
+
+  // Chunk the salesList into groups of three
+  const salesChunks = chunkArray(salesList, 3);
+  console.log(salesChunks);
+
   return (
     <div>
       <Header />
@@ -114,16 +127,39 @@ const Homepage = () => {
               A collection of sales tools designed <br /> with revenue growth in mind
             </h2>
             <div className="section-subtitle">End-To-End, Powerful Suite of Features for efficient leads and bookings management</div>
-            <div className="row mt-5">
-              {salesList.map((data, index) => (
-                <div className="col-md-4 mb-3" key={index}>
-                  <div className="collection-sales-card">
-                    <img src={data.img} className="mb-3" alt="" />
-                    <h5>{data.title}</h5>
-                    <p>{data.desc}</p>
+
+            <div className="d-none d-md-block">
+              <div className="row mt-5 ">
+                {salesList.map((data, index) => (
+                  <div className="col-md-4 mb-3" key={index}>
+                    <div className="collection-sales-card">
+                      <img src={data.img} className="mb-3" alt="" />
+                      <h5>{data.title}</h5>
+                      <p>{data.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-5 d-block d-md-none">
+              <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} items={1}>
+                {salesChunks.map((chunk, index) => (
+                  <div className="item" key={index}>
+                    <div className="row">
+                      {chunk.map((data, subIndex) => (
+                        <div className="col-12 mb-3" key={subIndex}>
+                          <div className="collection-sales-card">
+                            <img src={data.img} className="mb-3" alt={data.title} />
+                            <h5>{data.title}</h5>
+                            <p>{data.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </OwlCarousel>
             </div>
           </div>
         </section>
@@ -160,7 +196,7 @@ const Homepage = () => {
               <div className="col-md-6">
                 <div className="row">
                   <div className="col-md-6 mb-3 mb-md-0">
-                    <div className="homepage-plan-card bg-beige mb-3 mb-md-0">
+                    <div className="homepage-plan-card bg-beige mb-3 mb-md-3">
                       <div className="mb-5">
                         Find the best plan for your <br className="d-none d-md-block" /> venue management
                       </div>
