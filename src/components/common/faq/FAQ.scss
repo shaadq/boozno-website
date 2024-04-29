@@ -1,0 +1,32 @@
+.custom-faq-accordion {
+    .accordion-item {
+        margin-bottom: 15px;
+        background-color: #F8F8F8;
+        border: none;
+        border-radius: 7px;
+    }
+    .accordion-button {
+        font-family: "Red Hat Regular",sans-serif;
+        border-radius: 7px;
+        background-color: #F8F8F8;
+        font-weight: 500;
+        box-shadow: none !important;
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+    .accordion-button::after {
+        background-image: url(../../../assets/img/faq-plus-icon.png);
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+    }
+    .accordion-button:not(.collapsed):after {
+        background-image: url(../../../assets/img/faq-plus-icon.png);
+        transform: rotate(45deg);
+    }
+    .accordion-button:not(.collapsed) {
+        font-family: "Red Hat Bold",sans-serif;
+        background-color: #F8F8F8;
+    }
+ }

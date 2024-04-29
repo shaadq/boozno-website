@@ -1,7 +1,11 @@
 header {
   //   background-color: purple;
   height: 88px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
   z-index: 99;
+
   .header-logo {
     // width: 100px;
   }
@@ -32,14 +36,35 @@ header {
     margin: auto 0;
   }
 }
+.custom-header {
+  transition: 0.3s;
+}
 .header-menu-ofcanvas {
 }
-// .header-menu-ofcanvas {
 .header-menu-offcanvas {
   width: 85% !important;
+  max-width: 350px !important;
   border-radius: 20px 0 0 20px;
+
+  .header-offcanvas-body-wrappper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .header-menu-offcanvaslist {
+    width: 100%;
+    .list-item {
+      font-size: 18px;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      color: #494949;
+      border-bottom: 1px solid #e6e8f0;
+    }
+  }
 }
-// }
 
 @media screen and (max-width: 768px) {
   header {

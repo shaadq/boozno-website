@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Red Hat Regular";
-  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Red Hat Bold";
@@ -9,8 +8,7 @@
 }
 @font-face {
   font-family: "Red Hat Semi-bold";
-  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Red Hat Light";
@@ -18,8 +16,7 @@
 }
 @font-face {
   font-family: "Red Hat Italic";
-  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf") format("truetype");
 }
 
 body {
@@ -33,33 +30,18 @@ h5,
 h6 {
   font-family: "Red Hat Bold", sans-serif;
 }
-.btn-primary {
-  background-color: #7d63ec;
-  border-color: #7d63ec;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: #7c63ecb6 !important;
-  border-color: #7c63ecb6 !important;
-}
-.btn-primary:hover {
-  background-color: #7c63ecb6;
-  border-color: #7c63ecb6;
-}
-.btn-secondary {
-  background-color: #0cddd9;
-  border-color: #0cddd9;
-}
-.btn-secondary:hover {
-  background-color: #0cdddac2;
-  border-color: #0cdddac2;
-}
+
 .text-white {
   color: #ffffff;
 }
 .text-light {
   color: #adabb7ab !important;
+}
+.text-grey {
+  color: #494949;
+}
+.text-purple {
+  color: #7d63ec;
 }
 .fs-18 {
   font-size: 18px;
@@ -95,8 +77,14 @@ h6 {
 .bg-light-blue {
   background-color: #dff7fc;
 }
-.bg-purple {
+.bg-purple-light {
   background-color: #ededff;
+}
+.bg-purple {
+  background-color: #7d63ec;
+}
+.bg-custom-black {
+  background-color: rgba(0, 0, 0, 0.349);
 }
 .view-plan-btn {
   display: flex;
@@ -104,4 +92,7 @@ h6 {
   justify-content: space-between;
   border-radius: 45px;
   padding: 7px 20px;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
