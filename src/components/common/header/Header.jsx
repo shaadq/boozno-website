@@ -1,6 +1,6 @@
 import "./Header.scss";
 import Navbar from "react-bootstrap/Navbar";
-import { GlobeIcon, HeadphoneIcon, ListIcon, Logo } from "../../assets/img/svg";
+import { GlobeIcon, HeadphoneIcon, ListIcon, Logo } from "../../../assets/img/svg";
 import MenuOffcanvas from "./MenuOffcanvas";
 import { useEffect, useState } from "react";
 

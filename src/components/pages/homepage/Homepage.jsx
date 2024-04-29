@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Homepage.scss";
-import { HeadphoneSolidIcon, NoCardIcon, PlayerIcon, SandClockIcon, TopRightArrowIcon, TopRightArrowIconWhite } from "../../../assets/img/svg";
+import { HeadphoneSolidIcon, NoCardIcon, PlayerIcon, QuotesIcon, SandClockIcon, TopRightArrowIcon, TopRightArrowIconWhite } from "../../../assets/img/svg";
 import img1 from "../../../assets/img/sales-1.png";
 import img2 from "../../../assets/img/sales-2.png";
 import img3 from "../../../assets/img/sales-3.png";
@@ -10,11 +10,12 @@ import img6 from "../../../assets/img/sales-6.png";
 import img7 from "../../../assets/img/sales-7.png";
 import img8 from "../../../assets/img/sales-8.png";
 import img9 from "../../../assets/img/sales-9.png";
+import taj from "../../../assets/img/taj-img.png";
 import FAQ from "../../common/faq/FAQ";
 import RightAnswer from "../../common/right-answer/RightAnswer";
-import Header from "../../header/Header";
-import Footer from "../../footer/Footer";
 import OwlCarousel from "react-owl-carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
 const Homepage = () => {
   let salesList = [
@@ -76,170 +77,613 @@ const Homepage = () => {
 
   // Chunk the salesList into groups of three
   const salesChunks = chunkArray(salesList, 3);
-  console.log(salesChunks);
 
   return (
     <div>
-      {/* <Header /> */}
-      <div className="">
-        <section className="bg-purple-img">
-          <div className="homepage-section1-wrapper">
-            <h1 className="text-center text-white mb-4">
-              Capture Leads. <br className="d-block d-md-none" />
-              Boost Sales. <br />
-              Maximize Revenue.
-            </h1>
-            <p className="text-white text-center mb-4">
-              World’s 1st dedicated venue management software to engage leads better and <br className="d-none d-md-block" />
-              manage bookings effortlessly
-            </p>
-            <div className="btns-wrapper">
-              <button className="btn btn-secondary border-rad-45 custom-btn me-3 fw-bold">Get Started</button>
-              <button className="btn btn-light text-dark-blue border-rad-45 custom-btn fw-bold d-flex align-items-center justify-content-center">
-                <PlayerIcon />
-                <div className="ms-1">Schedule Demo</div>
-              </button>
-            </div>
-            <div className="homesection-bottom-utils-wrapper text-white">
-              <div className="d-flex">
-                <div className="d-flex me-4">
-                  <NoCardIcon />
-                  <div className="ms-2 whitespace-nowrap">No card required</div>
-                </div>
-                <div className="d-flex me-0 me-md-4">
-                  <HeadphoneSolidIcon />
-                  <div className="ms-2 whitespace-nowrap">Dedicated venue experts</div>
-                </div>
-              </div>
-
+      <section className="bg-purple-img">
+        <div className="homepage-section1-wrapper">
+          <h1 className="text-center text-white mb-4">
+            Capture Leads. <br className="d-block d-md-none" />
+            Boost Sales. <br />
+            Maximize Revenue.
+          </h1>
+          <p className="text-white text-center mb-4">
+            World’s 1st dedicated venue management software to engage leads better and <br className="d-none d-md-block" />
+            manage bookings effortlessly
+          </p>
+          <div className="btns-wrapper">
+            <button className="btn btn-secondary border-rad-45 custom-btn me-3 fw-bold">Get Started</button>
+            <button className="btn btn-light text-dark-blue border-rad-45 custom-btn fw-bold d-flex align-items-center justify-content-center">
+              <PlayerIcon />
+              <div className="ms-1">Schedule Demo</div>
+            </button>
+          </div>
+          <div className="homesection-bottom-utils-wrapper text-white">
+            <div className="d-flex">
               <div className="d-flex me-4">
-                <SandClockIcon />
-                <div className="ms-2">Quick set-up</div>
+                <NoCardIcon />
+                <div className="ms-2 whitespace-nowrap">No card required</div>
               </div>
+              <div className="d-flex me-0 me-md-4">
+                <HeadphoneSolidIcon />
+                <div className="ms-2 whitespace-nowrap">Dedicated venue experts</div>
+              </div>
+            </div>
+
+            <div className="d-flex me-4">
+              <SandClockIcon />
+              <div className="ms-2">Quick set-up</div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Collection of Sales Section Start */}
-        <section className="py-5">
-          <div className="container">
-            <h2 className="section-title text-dark-blue mb-3">
-              A collection of sales tools designed <br /> with revenue growth in mind
-            </h2>
-            <div className="section-subtitle">End-To-End, Powerful Suite of Features for efficient leads and bookings management</div>
+      {/* Collection of Sales Section Start */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="section-title text-dark-blue mb-3">
+            A collection of sales tools designed <br /> with revenue growth in mind
+          </h2>
+          <div className="section-subtitle">End-To-End, Powerful Suite of Features for efficient leads and bookings management</div>
 
-            <div className="d-none d-md-block">
-              <div className="row mt-5 ">
-                {salesList.map((data, index) => (
-                  <div className="col-md-4 mb-3" key={index}>
-                    <div className="collection-sales-card">
-                      <img src={data.img} className="mb-3" alt="" />
-                      <h5>{data.title}</h5>
-                      <p>{data.desc}</p>
-                    </div>
+          <div className="d-none d-md-block">
+            <div className="row mt-5 ">
+              {salesList.map((data, index) => (
+                <div className="col-md-4 mb-3" key={index}>
+                  <div className="collection-sales-card">
+                    <img src={data.img} className="mb-3" alt="" />
+                    <h5>{data.title}</h5>
+                    <p>{data.desc}</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
+          </div>
 
-            <div className="mt-5 d-block d-md-none">
-              <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} items={1}>
-                {salesChunks.map((chunk, index) => (
-                  <div className="item" key={index}>
-                    <div className="row">
-                      {chunk.map((data, subIndex) => (
-                        <div className="col-12 mb-3" key={subIndex}>
-                          <div className="collection-sales-card">
-                            <img src={data.img} className="mb-3" alt={data.title} />
-                            <h5>{data.title}</h5>
-                            <p>{data.desc}</p>
-                          </div>
+          <div className="mt-5 d-block d-md-none">
+            <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} items={1}>
+              {salesChunks.map((chunk, index) => (
+                <div className="item" key={index}>
+                  <div className="row">
+                    {chunk.map((data, subIndex) => (
+                      <div className="col-12 mb-3" key={subIndex}>
+                        <div className="collection-sales-card">
+                          <img src={data.img} className="mb-3" alt={data.title} />
+                          <h5>{data.title}</h5>
+                          <p>{data.desc}</p>
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </OwlCarousel>
-            </div>
+                </div>
+              ))}
+            </OwlCarousel>
           </div>
-        </section>
-        {/* Collection of Sales Section End */}
+        </div>
+      </section>
+      {/* Collection of Sales Section End */}
 
-        {/* View Plans Section Start */}
-        <section className="py-5">
-          <div className="container">
-            <div className="row mb-4">
-              <div className="col-md-6">
-                <h2 className="section-title text-center text-md-start">Lorem Ipsum dolor sit amet</h2>
-              </div>
-              <div className="col-md-6">
-                <div className="section-subtitle text-center text-md-end">
-                  We are a team of 20+ who are passionate about <br />
-                  making the world a better place.
-                </div>
-              </div>
+      {/* View Plans Section Start */}
+      <section className="py-5">
+        <div className="container">
+          <div className="row mb-4">
+            <div className="col-md-6">
+              <h2 className="section-title text-center text-md-start">Lorem Ipsum dolor sit amet</h2>
             </div>
-            <div className="row">
-              <div className="col-md-6 mb-3 mb-md-0">
-                <div className="view-plan-bg-img">
-                  <div className="mb-5">
-                    <div className="text-white">Dive into our blog posts for useful tips and inspiration</div>
-                    <h3 className="text-white">Read our blogs</h3>
-                  </div>
-                  <div>
-                    <button className="btn btn-primary view-plan-btn">
-                      <div className="me-3">View Details</div> <TopRightArrowIconWhite />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="row">
-                  <div className="col-md-6 mb-3 mb-md-0">
-                    <div className="homepage-plan-card bg-beige mb-3 mb-md-3">
-                      <div className="mb-5">
-                        Find the best plan for your <br className="d-none d-md-block" /> venue management
-                      </div>
-                      <div className="view-plan-wrapper">
-                        <h6>View our Plans </h6>
-                        <TopRightArrowIcon />
-                      </div>
-                    </div>
-
-                    <div className="homepage-plan-card bg-light-blue">
-                      <div className="mb-5">
-                        Get personalized advice by <br className="d-none d-md-block" /> our venue experts for tailored <br className="d-none d-md-block" /> insights
-                      </div>
-                      <div className="view-plan-wrapper">
-                        <h6>Talk to our Sales </h6>
-                        <TopRightArrowIcon />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 ">
-                    <div className="homepage-plan-card bg-purple-light h-100">
-                      <div className="mb-5">
-                        See innovation in action — <br className="d-none d-md-block" /> book your own software <br className="d-none d-md-block" /> demo today
-                      </div>
-                      <div className="view-plan-wrapper">
-                        <h6>Book a Demo</h6>
-                        <TopRightArrowIcon />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div className="col-md-6">
+              <div className="section-subtitle text-center text-md-end">
+                We are a team of 20+ who are passionate about <br />
+                making the world a better place.
               </div>
             </div>
           </div>
-        </section>
-        {/* View Plans Section End */}
+          <div className="row">
+            <div className="col-md-6 mb-3 mb-md-0">
+              <div className="view-plan-bg-img">
+                <div className="mb-5">
+                  <div className="text-white">Dive into our blog posts for useful tips and inspiration</div>
+                  <h3 className="text-white">Read our blogs</h3>
+                </div>
+                <div>
+                  <button className="btn btn-primary view-plan-btn">
+                    <div className="me-3">View Details</div> <TopRightArrowIconWhite />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-md-6 mb-3 mb-md-0">
+                  <div className="homepage-plan-card bg-beige mb-3 mb-md-3">
+                    <div className="mb-5">
+                      Find the best plan for your <br className="d-none d-md-block" /> venue management
+                    </div>
+                    <div className="view-plan-wrapper">
+                      <h6>View our Plans </h6>
+                      <TopRightArrowIcon />
+                    </div>
+                  </div>
 
-        {/* FAQ Section Start */}
-        <FAQ />
-        <RightAnswer />
-        {/* FAQ Section End */}
-      </div>
-      {/* <Footer /> */}
+                  <div className="homepage-plan-card bg-light-blue">
+                    <div className="mb-5">
+                      Get personalized advice by <br className="d-none d-md-block" /> our venue experts for tailored <br className="d-none d-md-block" /> insights
+                    </div>
+                    <div className="view-plan-wrapper">
+                      <h6>Talk to our Sales </h6>
+                      <TopRightArrowIcon />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 ">
+                  <div className="homepage-plan-card bg-purple-light h-100">
+                    <div className="mb-5">
+                      See innovation in action — <br className="d-none d-md-block" /> book your own software <br className="d-none d-md-block" /> demo today
+                    </div>
+                    <div className="view-plan-wrapper">
+                      <h6>Book a Demo</h6>
+                      <TopRightArrowIcon />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* View Plans Section End */}
+
+      {/* Testimonials Section Start */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="section-title text-dark-blue mb-3">Testimonials</h2>
+          <div className="section-subtitle">What our customers have to say about us</div>
+
+          <div className="testimonials-container">
+            <div className="mb-4">
+              <Swiper
+                loop={true}
+                // peek={{ before: 100, after: 100 }}
+                slidesPerView={1.5} // This allows half of the previous and next slides to show
+                centeredSlides={true} // Centers the current slide
+                // slidesPerView={1}
+                spaceBetween={30}
+                pagination={{
+                  clickable: true,
+                }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Pagination]}
+                className="mySwiper">
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div>
+              <Swiper
+                loop={true}
+                // peek={{ before: 100, after: 100 }}
+                slidesPerView={1.5} // This allows half of the previous and next slides to show
+                centeredSlides={true} // Centers the current slide
+                // slidesPerView={1}
+                spaceBetween={30}
+                pagination={{
+                  clickable: true,
+                }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Pagination]}
+                className="mySwiper">
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <div className="testimonials-card">
+                    <div>
+                      <div className="mb-1">
+                        <QuotesIcon />
+                      </div>
+                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                    </div>
+
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 className="mb-1">John Robert</h6>
+                        <p className="mb-0">Hibiscus CoastParty Hire</p>
+                      </div>
+                      <div>
+                        <img src={taj} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonials Section End */}
+
+      {/* FAQ Section Start */}
+      <FAQ />
+      <RightAnswer />
+      {/* FAQ Section End */}
     </div>
   );
 };

@@ -1,14 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  Logo,
-  MailIcon,
-  PhoneIcon,
-  TwitterIcon,
-} from "../../assets/img/svg";
+import { FacebookIcon, InstagramIcon, LinkedinIcon, Logo, MailIcon, PhoneIcon, TwitterIcon } from "../../../assets/img/svg";
 
 const Footer = () => {
   return (
@@ -41,9 +33,7 @@ const Footer = () => {
             </div>
             <div className="col-md-4">
               <div className="row">
-                <div className="text-white footer-link-title">
-                  Usefull Links
-                </div>
+                <div className="text-white footer-link-title">Usefull Links</div>
                 <div className="col-6">
                   <div className="footer-links text-light">
                     <div className="item">Home</div>
@@ -92,9 +82,7 @@ const Footer = () => {
             </div>
             <div className="col-md-4">
               <div>
-                <div className="text-white mb-3 fs-18">
-                  Subscribe to our weekly email newsletter
-                </div>
+                <div className="text-white mb-3 fs-18">Subscribe to our weekly email newsletter</div>
                 <div className="footer-subscribe-wrapper">
                   <input type="text" placeholder="Add your email address" />
                   <button className="btn btn-primary">Subscribe</button>
@@ -104,9 +92,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-dark-blue py-3 text-white text-center">
-        © 2023 Boozno Technologies Pvt. Ltd. All rights reserved.{" "}
-      </div>
+      <div className="bg-dark-blue py-3 text-white text-center">© 2023 Boozno Technologies Pvt. Ltd. All rights reserved. </div>
     </footer>
   );
 };
