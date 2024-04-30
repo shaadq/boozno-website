@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 mb-md-0">
               <div className="row">
                 <div className="col-6">
                   <div className="text-white footer-link-title">Legal</div>
@@ -62,7 +62,7 @@ const Footer = () => {
                     <div className="item">Privacy Policy</div>
                     <div className="item">FAQ's</div>
                     <div className="item">Cookie Policy</div>
-                    <div className="item">Do Not Sell My Personal Info</div>
+                    <div className="item whitespace-nowrap">Do Not Sell My Personal Info</div>
                   </div>
                 </div>
                 <div className="col-6">
@@ -80,7 +80,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+
+            {/* Weekly Newsletter */}
+            {/* <div className="col-md-4">
               <div>
                 <div className="text-white mb-3 fs-18">Subscribe to our weekly email newsletter</div>
                 <div className="footer-subscribe-wrapper">
@@ -88,7 +90,7 @@ const Footer = () => {
                   <button className="btn btn-primary">Subscribe</button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

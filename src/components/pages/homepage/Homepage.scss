@@ -76,8 +76,7 @@
   border-radius: 18px;
   height: 100%;
   padding: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
 }
 .owl-carousel {
   .owl-item {
@@ -102,9 +101,22 @@
   }
 }
 .testimonials-container {
-  box-shadow: inset 400px 0 30px -20px white, inset -400px 0 30px -20px white;
+  position: relative;
+  // box-shadow: inset 400px 0 30px -20px white, inset -400px 0 30px -20px white;
   // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+.testimonials-container::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Adjust these values to determine how much the shadow overlaps */
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: white; /* This should be the same color as the parent div's background */
+  box-shadow: inset 260px 0 30px -20px white, inset -260px 0 30px -20px white;
+  z-index: -1; /* This places the pseudo-element behind the content */
+}
+
 .testimonials-card {
   max-width: 500px;
   width: 100%;
@@ -130,7 +142,6 @@
   justify-content: center;
   padding: 10px 0;
 }
-
 .better-list {
   .better-list-item {
     display: flex;
@@ -145,15 +156,47 @@
     }
   }
 }
-
 .galaxy-img-wrapper {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   svg {
     width: 100%;
   }
 }
-
 .product-story-img {
   width: 90%;
+}
+.save-strip-wrapper-bg {
+  background-image: url(../../../assets/img/pruple-strip.png);
+  background-position: center left;
+  background-size: cover;
+  .save-strip-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 25px;
+      margin-right: 8px;
+    }
+  }
+}
+.venue-managemnet-wrapper {
+  background-color: #16141a;
+  padding: 40px 0 20px 0;
+  border-radius: 20px;
+
+  .venue-manage-img-wrapper {
+    height: fit-content;
+    display: flex;
+    img {
+      width: 100%;
+    }
+    svg {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -166,6 +209,9 @@
       align-items: center;
       gap: 10px;
     }
+  }
+  .galaxy-img-wrapper {
+    margin-top: -50px;
   }
 }
 @media screen and (max-width: 992px) {
