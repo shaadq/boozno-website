@@ -1,6 +1,18 @@
 import React from "react";
 import "./Homepage.scss";
-import { GalaxyImg, GalaxyImgMobile, HeadphoneSolidIcon, NoCardIcon, PlayerIcon, QuotesIcon, SandClockIcon, TopRightArrowIcon, TopRightArrowIconWhite, VenueManagementProblemsImg, YellowCheckIcon } from "../../../assets/img/svg";
+import {
+  GalaxyImg,
+  GalaxyImgMobile,
+  HeadphoneSolidIcon,
+  NoCardIcon,
+  PlayerIcon,
+  QuotesIcon,
+  SandClockIcon,
+  TopRightArrowIcon,
+  TopRightArrowIconWhite,
+  VenueManagementProblemsImg,
+  YellowCheckIcon,
+} from "../../../assets/img/svg";
 import img1 from "../../../assets/img/sales-1.png";
 import img2 from "../../../assets/img/sales-2.png";
 import img3 from "../../../assets/img/sales-3.png";
@@ -94,7 +106,14 @@ const Homepage = () => {
     },
   ];
 
-  let betterList = [{ text: "Replaces all your current SaaS solutions" }, { text: "Comprehensive Software Solution" }, { text: "Intuitive User Interface" }, { text: "Real-time Analytics and Reporting" }, { text: "Customization and Scalability" }, { text: "Transparent Pricing, No Hidden Fees" }];
+  let betterList = [
+    { text: "Replaces all your current SaaS solutions" },
+    { text: "Comprehensive Software Solution" },
+    { text: "Intuitive User Interface" },
+    { text: "Real-time Analytics and Reporting" },
+    { text: "Customization and Scalability" },
+    { text: "Transparent Pricing, No Hidden Fees" },
+  ];
 
   const chunkArray = (arr, size) => {
     const result = [];
@@ -117,11 +136,14 @@ const Homepage = () => {
             Maximize Revenue.
           </h1>
           <p className="text-white text-center mb-4">
-            World’s 1st dedicated venue management software to engage leads better and <br className="d-none d-md-block" />
+            World’s 1st dedicated venue management software to engage leads
+            better and <br className="d-none d-md-block" />
             manage bookings effortlessly
           </p>
           <div className="btns-wrapper">
-            <button className="btn btn-secondary border-rad-45 custom-btn me-3 fw-bold">Get Started</button>
+            <button className="btn btn-secondary border-rad-45 custom-btn me-3 fw-bold">
+              Get Started
+            </button>
             <button className="btn btn-light text-dark-blue border-rad-45 custom-btn fw-bold d-flex align-items-center justify-content-center">
               <PlayerIcon />
               <div className="ms-1">Schedule Demo</div>
@@ -135,7 +157,9 @@ const Homepage = () => {
               </div>
               <div className="d-flex me-0 me-md-4">
                 <HeadphoneSolidIcon />
-                <div className="ms-2 whitespace-nowrap">Dedicated venue experts</div>
+                <div className="ms-2 whitespace-nowrap">
+                  Dedicated venue experts
+                </div>
               </div>
             </div>
 
@@ -154,7 +178,8 @@ const Homepage = () => {
             <div className="col-lg-5 d-flex align-items-center">
               <div>
                 <h2 className="section-title text-lg-start text-dark-blue mb-5">
-                  What makes The Boozno <br className="d-none d-lg-block" /> Better than others?
+                  What makes The Boozno <br className="d-none d-lg-block" />{" "}
+                  Better than others?
                 </h2>
                 <div className="better-list d-none d-lg-block">
                   {betterList.map((item, index) => (
@@ -188,13 +213,18 @@ const Homepage = () => {
       {/* Galaxy of Venues */}
       <section className="py-0 py-md-5">
         <div className="container">
-          <h2 className="section-title center text-dark-blue">Galaxy of venues one Solution</h2>
-          <div className="section-subtitle">Boozno boosts revenue across diverse venues with a powerful suite of results-driven features.</div>
+          <h2 className="section-title center text-dark-blue">
+            Galaxy of venues one Solution
+          </h2>
+          <div className="section-subtitle">
+            Boozno boosts revenue across diverse venues with a powerful suite of
+            results-driven features.
+          </div>
 
           <span className="galaxy-img-wrapper d-block d-md-none">
             <GalaxyImgMobile />
           </span>
-          <span className="galaxy-img-wrapper my-4 d-none d-md-block">
+          <span className="galaxy-img-wrapper galaxy-img-wrapper-web d-none d-md-block">
             <GalaxyImg />
           </span>
         </div>
@@ -202,7 +232,7 @@ const Homepage = () => {
       {/* Galaxy of Venues End*/}
 
       {/* Product Story */}
-      <section className="py-5">
+      <section className="pb-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
@@ -210,10 +240,31 @@ const Homepage = () => {
             </div>
             <div className="col-lg-6 d-flex align-items-center">
               <div>
-                <h2 className="section-title text-lg-start text-dark-blue mb-4">Product Story</h2>
-                <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.m is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.m is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                <h2 className="section-title text-lg-start text-dark-blue mb-4">
+                  Product Story
+                </h2>
+                <p>
+                  Lorem ipsum is a placeholder text commonly used to demonstrate
+                  the visual form of a document or a typeface without relying on
+                  meaningful content.
+                </p>
+                <p>
+                  Lorem ipsum is a placeholder text commonly used to demonstrate
+                  the visual form of a document or a typeface without relying on
+                  meaningful content.m is a placeholder text commonly used to
+                  demonstrate the visual form of a document or a typeface
+                  without relying on meaningful content.Lorem ipsum is a
+                  placeholder text commonly used to demonstrate the visual form
+                  of a document or a typeface without relying on meaningful
+                  content.
+                </p>
+                <p>
+                  Lorem ipsum is a placeholder text commonly used to demonstrate
+                  the visual form of a document or a typeface without relying on
+                  meaningful content.m is a placeholder text commonly used to
+                  demonstrate the visual form of a document or a typeface
+                  without relying on meaningful content.
+                </p>
               </div>
             </div>
           </div>
@@ -225,11 +276,28 @@ const Homepage = () => {
       <section className="py-5">
         <div className="container">
           <div className="venue-managemnet-wrapper">
-            <h2 className="section-title center text-white">Galaxy of venues one Solution</h2>
-            <div className="section-subtitle text-light-white">Boozno boosts revenue across diverse venues with a powerful suite of results-driven features.</div>
-            <div className="venue-manage-img-wrapper">
-              <img src={venueManageImgMobile} className="d-block d-md-none" alt="" draggable="false" />
-              <img src={venueManageImg} alt="" className="d-none d-md-block" draggable="false" />
+            <h2 className="section-title center text-white">
+              Venue Management Problems,
+              <br className="d-none d-md-block" /> One Solution
+            </h2>
+            <div className="section-subtitle text-light-white">
+              An advanced lead management in CRM will{" "}
+              <br className="d-block d-md-none" />
+              provide you with the following benefits including
+            </div>
+            <div className="venue-manage-img-wrapper mt-3 mt-md-0">
+              <img
+                src={venueManageImgMobile}
+                className="d-block d-md-none"
+                alt=""
+                draggable="false"
+              />
+              <img
+                src={venueManageImg}
+                alt=""
+                className="d-none d-md-block"
+                draggable="false"
+              />
               {/* <VenueManagementProblemsImg /> */}
             </div>
           </div>
@@ -255,9 +323,13 @@ const Homepage = () => {
       <section className="py-5">
         <div className="container">
           <h2 className="section-title text-dark-blue mb-3">
-            A collection of sales tools designed <br /> with revenue growth in mind
+            A collection of sales tools designed <br /> with revenue growth in
+            mind
           </h2>
-          <div className="section-subtitle">End-To-End, Powerful Suite of Features for efficient leads and bookings management</div>
+          <div className="section-subtitle">
+            End-To-End, Powerful Suite of Features for efficient leads and
+            bookings management
+          </div>
 
           <div className="d-none d-md-block">
             <div className="row mt-5 ">
@@ -274,14 +346,25 @@ const Homepage = () => {
           </div>
 
           <div className="mt-5 d-block d-md-none">
-            <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} items={1}>
+            <OwlCarousel
+              className="owl-theme"
+              loop
+              margin={10}
+              nav
+              dots={false}
+              items={1}
+            >
               {salesChunks.map((chunk, index) => (
                 <div className="item" key={index}>
                   <div className="row">
                     {chunk.map((data, subIndex) => (
                       <div className="col-12 mb-3" key={subIndex}>
                         <div className="collection-sales-card">
-                          <img src={data.img} className="mb-3" alt={data.title} />
+                          <img
+                            src={data.img}
+                            className="mb-3"
+                            alt={data.title}
+                          />
                           <h5>{data.title}</h5>
                           <p>{data.desc}</p>
                         </div>
@@ -301,7 +384,9 @@ const Homepage = () => {
         <div className="container">
           <div className="row mb-4">
             <div className="col-md-6">
-              <h2 className="section-title text-center text-md-start">Lorem Ipsum dolor sit amet</h2>
+              <h2 className="section-title text-center text-md-start">
+                Lorem Ipsum dolor sit amet
+              </h2>
             </div>
             <div className="col-md-6">
               <div className="section-subtitle text-center text-md-end">
@@ -314,12 +399,15 @@ const Homepage = () => {
             <div className="col-md-6 mb-3 mb-md-0">
               <div className="view-plan-bg-img">
                 <div className="mb-5">
-                  <div className="text-white">Dive into our blog posts for useful tips and inspiration</div>
+                  <div className="text-white">
+                    Dive into our blog posts for useful tips and inspiration
+                  </div>
                   <h3 className="text-white">Read our blogs</h3>
                 </div>
                 <div>
                   <button className="btn btn-primary view-plan-btn">
-                    <div className="me-3">View Details</div> <TopRightArrowIconWhite />
+                    <div className="me-3">View Details</div>{" "}
+                    <TopRightArrowIconWhite />
                   </button>
                 </div>
               </div>
@@ -329,7 +417,8 @@ const Homepage = () => {
                 <div className="col-md-6 mb-3 mb-md-0">
                   <div className="homepage-plan-card bg-beige mb-3 mb-md-3">
                     <div className="mb-5">
-                      Find the best plan for your <br className="d-none d-md-block" /> venue management
+                      Find the best plan for your{" "}
+                      <br className="d-none d-md-block" /> venue management
                     </div>
                     <div className="view-plan-wrapper">
                       <h6>View our Plans </h6>
@@ -339,7 +428,9 @@ const Homepage = () => {
 
                   <div className="homepage-plan-card bg-light-blue">
                     <div className="mb-5">
-                      Get personalized advice by <br className="d-none d-md-block" /> our venue experts for tailored <br className="d-none d-md-block" /> insights
+                      Get personalized advice by{" "}
+                      <br className="d-none d-md-block" /> our venue experts for
+                      tailored <br className="d-none d-md-block" /> insights
                     </div>
                     <div className="view-plan-wrapper">
                       <h6>Talk to our Sales </h6>
@@ -350,7 +441,9 @@ const Homepage = () => {
                 <div className="col-md-6 ">
                   <div className="homepage-plan-card bg-purple-light h-100">
                     <div className="mb-5">
-                      See innovation in action — <br className="d-none d-md-block" /> book your own software <br className="d-none d-md-block" /> demo today
+                      See innovation in action —{" "}
+                      <br className="d-none d-md-block" /> book your own
+                      software <br className="d-none d-md-block" /> demo today
                     </div>
                     <div className="view-plan-wrapper">
                       <h6>Book a Demo</h6>
@@ -369,9 +462,11 @@ const Homepage = () => {
       <section className="py-5">
         <div className="container">
           <h2 className="section-title text-dark-blue mb-3">Testimonials</h2>
-          <div className="section-subtitle">What our customers have to say about us</div>
+          <div className="section-subtitle">
+            What our customers have to say about us
+          </div>
 
-          <div className="testimonials-container d-none d-lg-block">
+          <div className="testimonials-container d-none d-lg-block mt-4">
             <div className="mb-4">
               <Swiper
                 loop={true}
@@ -398,7 +493,8 @@ const Homepage = () => {
                   },
                 }}
                 modules={[Pagination]}
-                className="mySwiper">
+                className="mySwiper"
+              >
                 <SwiperSlide>
                   {" "}
                   <div className="testimonials-card">
@@ -406,7 +502,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -427,7 +529,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -448,7 +556,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -469,7 +583,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -490,7 +610,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -511,7 +637,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -532,7 +664,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -553,7 +691,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -574,7 +718,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -616,7 +766,8 @@ const Homepage = () => {
                   },
                 }}
                 modules={[Pagination]}
-                className="mySwiper">
+                className="mySwiper"
+              >
                 <SwiperSlide>
                   {" "}
                   <div className="testimonials-card">
@@ -624,7 +775,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -645,7 +802,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -666,7 +829,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -687,7 +856,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -708,7 +883,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -729,7 +910,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -750,7 +937,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -771,7 +964,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -792,7 +991,13 @@ const Homepage = () => {
                       <div className="mb-1">
                         <QuotesIcon />
                       </div>
-                      <div className="testimonial-text">"Excellent app, has transformed how I manage pickups, deliveries, and shipping. Highly recommend. Many thanks to Savin & Annie, who helped set up the app and ensured everything was running smoothly. Great tech support, which is greatly appreciated."</div>
+                      <div className="testimonial-text">
+                        "Excellent app, has transformed how I manage pickups,
+                        deliveries, and shipping. Highly recommend. Many thanks
+                        to Savin & Annie, who helped set up the app and ensured
+                        everything was running smoothly. Great tech support,
+                        which is greatly appreciated."
+                      </div>
                     </div>
 
                     <div className="d-flex align-items-center justify-content-between">
@@ -811,7 +1016,14 @@ const Homepage = () => {
           </div>
 
           <div className="d-block d-lg-none">
-            <OwlCarousel className="owl-theme" loop margin={10} nav dots={false} items={1}>
+            <OwlCarousel
+              className="owl-theme"
+              loop
+              margin={10}
+              nav
+              dots={false}
+              items={1}
+            >
               {testimonials.map((item, index) => (
                 <div className="item" key={index}>
                   <div className="testimonials-card">

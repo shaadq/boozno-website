@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Red Hat Regular";
-  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf") format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf")
+    format("truetype");
 }
 @font-face {
   font-family: "Red Hat Bold";
@@ -8,7 +9,8 @@
 }
 @font-face {
   font-family: "Red Hat Semi-bold";
-  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf") format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf")
+    format("truetype");
 }
 @font-face {
   font-family: "Red Hat Light";
@@ -16,7 +18,8 @@
 }
 @font-face {
   font-family: "Red Hat Italic";
-  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf") format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf")
+    format("truetype");
 }
 
 body {
@@ -30,7 +33,6 @@ h5,
 h6 {
   font-family: "Red Hat Bold", sans-serif;
 }
-
 .text-white {
   color: #ffffff;
 }
@@ -39,6 +41,12 @@ h6 {
 }
 .text-grey {
   color: #494949;
+}
+.text-semigrey {
+  color: #4a4a4a;
+}
+.text-darkgrey {
+  color: #313131;
 }
 .text-purple {
   color: #7d63ec;
@@ -70,7 +78,7 @@ h6 {
   text-align: center;
 }
 .section-subtitle {
-  font-family: "Red Hat Semi-bold", sans-serif;
+  // font-family: "Red Hat Semi-bold", sans-serif;
   text-align: center;
   color: #666666;
 }

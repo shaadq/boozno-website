@@ -56,16 +56,34 @@
   }
 
   .custom-tab-content {
-    background-image: url(../../../assets/img/tab-bg.png);
+    background-image: url(../../../../assets/img/tab-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 40px;
-    padding-left: 60px;
+    padding-left: 70px;
     margin-left: -150px;
     background-color: #ffffff;
     width: 100%;
     border-radius: 45px;
+  }
+}
+.custom-tab-content-container {
+  h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .tab-content {
+    color: #4a4a4a;
+    font-family: "Red Hat Semi-bold", sans-serif;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .tab-item-list-text {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -135,7 +153,7 @@
   }
 
   .right-arrow-wrapper::before {
-    background-image: url(../../../assets/img/triangle-before.png); /* Corrected order */
+    background-image: url(../../../../assets/img/triangle-before.png); /* Corrected order */
     content: "";
     display: block;
     width: 15px;
@@ -150,7 +168,7 @@
   }
 
   .right-arrow-wrapper::after {
-    background-image: url(../../../assets/img/triangle-after.png);
+    background-image: url(../../../../assets/img/triangle-after.png);
     content: "";
     width: 11px;
     height: 11px;
