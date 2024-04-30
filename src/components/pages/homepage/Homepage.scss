@@ -83,6 +83,10 @@
     img {
       width: auto !important;
     }
+
+    .item {
+      padding: 15px;
+    }
   }
 }
 .owl-nav {
@@ -213,7 +217,21 @@
   .galaxy-img-wrapper {
     margin-top: -50px;
   }
+  .better-list {
+    .better-list-item {
+      .title {
+        font-size: 16px;
+        // margin-left: 5px !important;
+      }
+    }
+  }
+  .owl-carousel {
+    .item {
+      padding: 15px;
+    }
+  }
 }
+
 @media screen and (max-width: 992px) {
   .product-story-img {
     width: 100%;
