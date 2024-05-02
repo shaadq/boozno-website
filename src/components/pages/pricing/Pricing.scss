@@ -1,2 +1,51 @@
 .section {
 }
+.switch-input-wrapper {
+  .form-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form-check-input {
+      background-color: #7d63ec;
+      border-color: #7d63ec;
+      height: 21px;
+      width: 36px;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    .form-check-input:focus {
+      box-shadow: none;
+      //   background-image: url(../../../assets/img/switch.png);
+    }
+  }
+}
+.save-offer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 20px;
+  }
+  .text {
+    background-image: linear-gradient(90deg, #ff647c 0%, #ffacb8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.plan-card {
+  padding: 25px 35px;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  .title {
+    font-size: 28px;
+  }
+  .card-list-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+.border-purple {
+  border: 1px solid #a894ff;
+}
