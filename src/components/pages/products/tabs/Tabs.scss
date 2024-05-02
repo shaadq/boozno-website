@@ -1,7 +1,8 @@
 .custom-nav-tabs {
 }
 .custom-tab-wrapper {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  // box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 45px;
   display: flex;
   justify-content: center;
@@ -37,16 +38,13 @@
         opacity: 0.6;
       }
     }
-
     .custom-tab-item:hover {
       .title {
         opacity: 1;
       }
     }
-
     .custom-tab-item.active {
       background-color: #7d63ec;
-
       .title {
         opacity: 1;
         font-weight: bold;
@@ -98,7 +96,7 @@
       align-items: start;
       width: 100%;
       padding: 20px 35px 20px 20px;
-      border-radius: 20px 20px 0 0;
+      border-radius: 16px 16px 0 0;
       min-width: auto;
 
       .custom-tab-item {
@@ -110,13 +108,13 @@
         height: 53px;
 
         .title {
-          letter-spacing: 1px;
+          letter-spacing: 0.5px;
           margin-left: 10px;
         }
       }
 
       .active {
-        z-index: 999;
+        z-index: 99;
       }
     }
     .custom-tab-list::-webkit-scrollbar {
@@ -127,11 +125,10 @@
       margin: 0;
       margin-top: -24px;
       width: 100%;
-      border-radius: 20px;
+      border-radius: 16px;
       z-index: 9;
     }
   }
-
   .right-arrow-wrapper {
     display: flex;
     justify-content: center;
@@ -145,12 +142,10 @@
     position: relative; /* Establishes relative positioning context for ::before and ::after */
     bottom: -8px;
   }
-
   .right-arrow-wrapper svg {
     width: 100px;
     transform: rotate(90deg); /* Rotates the SVG */
   }
-
   .right-arrow-wrapper::before {
     background-image: url(../../../../assets/img/triangle-before.png); /* Corrected order */
     content: "";
@@ -165,7 +160,6 @@
     z-index: 1;
     transform: rotate(-186deg);
   }
-
   .right-arrow-wrapper::after {
     background-image: url(../../../../assets/img/triangle-after.png);
     content: "";

@@ -58,7 +58,7 @@ const Header = ({ homepage }) => {
 
   return (
     <header>
-      <MenuOffcanvas show={show} setShow={setShow} />
+      <MenuOffcanvas show={show} setShow={setShow} headerList={headerList} setHeaderList={setHeaderList} />
       <Navbar expand="lg" className={`py-2 py-md-4 custom-header ${!isScrolledToTop ? "custom-bg-header" : ""}  ${homepage ? "homepage" : ""}`}>
         <div className="container d-flex justify-content-center">
           <div className="row w-100">

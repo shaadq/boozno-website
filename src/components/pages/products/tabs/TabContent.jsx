@@ -21,11 +21,11 @@ const TabContent = ({ content }) => {
           <div className="tab-list d-block d-md-none mb-4">
             <div className="row">
               {pointsChunks.map((item, index) => (
-                <div className="col-6 p-0" key={index}>
+                <div className="col-6 pe-0" key={index}>
                   {item.map((i, ind) => (
                     <div
                       key={ind}
-                      className=" d-flex align-items-center justify-content-center mb-3 text-darkgrey "
+                      className=" d-flex align-items-center justify-content-start mb-3 text-darkgrey "
                     >
                       <GreenCheckIcon />
                       <div className="tab-item-list-text ms-1">{i}</div>

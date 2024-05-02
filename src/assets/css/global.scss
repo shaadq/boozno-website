@@ -33,6 +33,9 @@ h6 {
 .text-white {
   color: #ffffff;
 }
+.text-black {
+  color: #000000;
+}
 .text-light {
   color: #adabb7ab !important;
 }
@@ -55,16 +58,22 @@ h6 {
   color: #aaaaaa;
 }
 .banner-page-title {
-  font-size: 48px !important;
+  font-size: 48px;
 }
 .fs-18 {
   font-size: 18px;
+}
+.w-80 {
+  width: 80%;
 }
 .text-dark-blue {
   color: #20184e;
 }
 .border-rad-45 {
   border-radius: 45px;
+}
+.border-rad-12 {
+  border-radius: 12px;
 }
 .margin-top-minus88 {
   margin-top: -88px;
@@ -90,6 +99,9 @@ h6 {
 }
 .bg-light-blue {
   background-color: #dff7fc;
+}
+.bg-light-purple {
+  background-color: #f6f3fa;
 }
 .bg-purple-light {
   background-color: #ededff;

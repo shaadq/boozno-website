@@ -5,12 +5,8 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #7c63ecb6 !important;
-  border-color: #7c63ecb6 !important;
-}
-.btn-primary:hover {
-  background-color: #7c63ecb6;
-  border-color: #7c63ecb6;
+  background-color: #7d63ec !important;
+  border-color: #7d63ec !important;
 }
 .btn-secondary {
   background-color: #0cddd9;
@@ -30,4 +26,7 @@
   background-color: #7d63ec !important;
   border-color: #7d63ec;
   color: white;
+}
+.start-now-btn {
+  padding: 10px 40px;
 }
