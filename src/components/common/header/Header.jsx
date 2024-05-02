@@ -1,67 +1,99 @@
 import "./Header.scss";
 import Navbar from "react-bootstrap/Navbar";
-import { GlobeIcon, HeadphoneIcon, ListIcon, Logo } from "../../../assets/img/svg";
+import { GlobeIcon, GlobeIconGrey, HeadphoneIcon, HeadphoneIconGrey, ListIcon, ListIconGrey, Logo, LogoPurple } from "../../../assets/img/svg";
 import MenuOffcanvas from "./MenuOffcanvas";
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ homepage }) => {
   const [isScrolledToTop, setIsScrolledToTop] = useState(true);
   const [show, setShow] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the scroll position is at the top
       const isAtTop = window.scrollY === 0;
-      setIsScrolledToTop(isAtTop); // Update the state
+      setIsScrolledToTop(isAtTop);
     };
-    // Add a scroll event listener
     window.addEventListener("scroll", handleScroll);
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array to ensure the effect runs only once on component mount
+  }, []);
+  const [headerList, setHeaderList] = useState([
+    {
+      text: "Home",
+      path: "/",
+      active: true,
+    },
+    {
+      text: "Solutions",
+      path: "/solution",
+      active: false,
+    },
+    {
+      text: "Pricing",
+      path: "/pricing",
+      active: false,
+    },
+    {
+      text: "Blog",
+      path: "/blog",
+      active: false,
+    },
+  ]);
+
+  const location = useLocation();
+  const updateActiveHeader = () => {
+    // Update headerList to mark the correct path as active
+    setHeaderList((prevList) =>
+      prevList.map((item) => ({
+        ...item,
+        active: item.path === location.pathname, // Mark as active if the path matches
+      }))
+    );
+  };
+  // Call updateActiveHeader when the route changes
+  useEffect(() => {
+    updateActiveHeader();
+  }, [location.pathname]); // Effect runs whenever the pathname changes
+
   return (
     <header>
       <MenuOffcanvas show={show} setShow={setShow} />
-      <Navbar expand="lg" className={`py-2 py-md-4 custom-header ${!isScrolledToTop ? "bg-custom-black" : ""}`}>
+      <Navbar expand="lg" className={`py-2 py-md-4 custom-header ${!isScrolledToTop ? "custom-bg-header" : ""}  ${homepage ? "homepage" : ""}`}>
         <div className="container d-flex justify-content-center">
           <div className="row w-100">
             <div className="col-6 col-lg-3">
               {" "}
-              <div className="logo-wrapper">
-                <Logo />
-              </div>
+              <div className="logo-wrapper">{homepage ? <Logo /> : <LogoPurple />}</div>
             </div>
             <div className="d-none d-lg-block col-md-4">
-              <div className="header-items d-none d-md-flex">
-                <div className="item">Home</div>
-                <div className="item">Solutions</div>
-                <div className="item">Pricing</div>
-                <div className="item">Blog</div>
+              <div className={`header-items d-none d-md-flex ${!homepage ? "homepage-header-items" : ""}`}>
+                {headerList.map((d, i) => (
+                  <Link to={d.path} key={i}>
+                    <div className={`item ${d.active ? "active" : ""}`}>{d.text}</div>
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="col-6 col-lg-5 pe-0">
               <div className="header-components">
                 <div className="header-component-item talk-to-sales-wrapper">
-                  <HeadphoneIcon />
-                  <div className="text-white ms-2 whitespace-nowrap">Talk to Sales</div>
+                  {homepage ? <HeadphoneIcon /> : <HeadphoneIconGrey />}
+
+                  <div className={`${homepage ? "text-white" : "text-greyheader"} ms-2 whitespace-nowrap`}>Talk to Sales</div>
                 </div>
+                <div className="d-none d-lg-block header-component-item">{homepage ? <GlobeIcon /> : <GlobeIconGrey />}</div>
+
                 <div className="d-none d-lg-block header-component-item">
-                  <GlobeIcon />
+                  <div className={`${homepage ? "text-white" : "text-greyheader"}`}>Login</div>
                 </div>
 
                 <div className="d-none d-lg-block header-component-item">
-                  <div className="text-white">Login</div>
-                </div>
-
-                <div className="d-none d-lg-block header-component-item">
-                  <button className="btn btn-outline-light border-rad-45 px-4">Sign Up</button>
+                  <button className={`btn ${homepage ? "btn-outline-light" : "btn-outline-primary"} border-rad-45 px-4`}>Sign Up</button>
                 </div>
 
                 <div className="header-component-item d-block d-lg-none cursor-pointer">
-                  <div onClick={() => setShow(true)}>
-                    <ListIcon />
-                  </div>
+                  <div onClick={() => setShow(true)}>{homepage ? <ListIcon /> : <ListIconGrey />}</div>
                 </div>
               </div>
             </div>

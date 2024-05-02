@@ -38,8 +38,6 @@ const ManagementSimplifiedTabs = () => {
         "Follow-Up Manager",
         "Funnel Management",
         "Follow-Up Manager",
-        "Funnel Management",
-        "Follow-Up Manager",
       ],
     },
     Inquiries: {
@@ -48,8 +46,6 @@ const ManagementSimplifiedTabs = () => {
         "Create, organise, and track inquiries for single or multiple days. Easily add and customise f&b packages or charge venue rentals. Include notes, reminders, and create quotations. Get real-time updates for overlapping inquiries, view billing summaries, and apply extra charges or discounts. Simplify your inquiry management with Boozno's all-in-one system.",
       img: inquiriesimg,
       points: [
-        "Funnel Management",
-        "Follow-Up Manager",
         "Funnel Management",
         "Follow-Up Manager",
         "Funnel Management",
@@ -70,8 +66,6 @@ const ManagementSimplifiedTabs = () => {
         "Follow-Up Manager",
         "Funnel Management",
         "Follow-Up Manager",
-        "Funnel Management",
-        "Follow-Up Manager",
       ],
     },
     Onboarding: {
@@ -80,8 +74,6 @@ const ManagementSimplifiedTabs = () => {
         "Create, organise, and track inquiries for single or multiple days. Easily add and customise f&b packages or charge venue rentals. Include notes, reminders, and create quotations. Get real-time updates for overlapping inquiries, view billing summaries, and apply extra charges or discounts. Simplify your inquiry management with Boozno's all-in-one system.",
       img: onboardingimg,
       points: [
-        "Funnel Management",
-        "Follow-Up Manager",
         "Funnel Management",
         "Follow-Up Manager",
         "Funnel Management",
@@ -102,8 +94,6 @@ const ManagementSimplifiedTabs = () => {
         "Follow-Up Manager",
         "Funnel Management",
         "Follow-Up Manager",
-        "Funnel Management",
-        "Follow-Up Manager",
       ],
     },
     Secuirty: {
@@ -112,8 +102,6 @@ const ManagementSimplifiedTabs = () => {
         "Create, organise, and track inquiries for single or multiple days. Easily add and customise f&b packages or charge venue rentals. Include notes, reminders, and create quotations. Get real-time updates for overlapping inquiries, view billing summaries, and apply extra charges or discounts. Simplify your inquiry management with Boozno's all-in-one system.",
       img: secimg,
       points: [
-        "Funnel Management",
-        "Follow-Up Manager",
         "Funnel Management",
         "Follow-Up Manager",
         "Funnel Management",

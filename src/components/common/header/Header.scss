@@ -4,7 +4,7 @@ header {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 99;
+  z-index: 9999;
 
   .header-logo {
     // width: 100px;
@@ -23,11 +23,19 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
+    a {
+      text-decoration: none;
+    }
 
     .item {
       margin: 0 15px;
       cursor: pointer;
       color: #ffffff;
+    }
+  }
+  .header-items.homepage-header-items {
+    .item {
+      color: #a6a2b6;
     }
   }
   .talk-to-sales-wrapper {
@@ -36,15 +44,31 @@ header {
     margin: auto 0;
   }
 }
+
+header {
+  .homepage {
+    .header-items {
+      .item.active {
+        color: #ffffff !important;
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+  .item.active {
+    color: #5b5769 !important;
+    opacity: 1;
+    font-weight: bold;
+  }
+}
 .custom-header {
   transition: 0.3s;
-}
-.header-menu-ofcanvas {
 }
 .header-menu-offcanvas {
   width: 85% !important;
   max-width: 350px !important;
   border-radius: 20px 0 0 20px;
+  z-index: 9999 !important;
 
   .header-offcanvas-body-wrappper {
     height: 100%;
@@ -53,9 +77,11 @@ header {
     align-items: start;
     justify-content: space-between;
   }
-
   .header-menu-offcanvaslist {
     width: 100%;
+    a {
+      text-decoration: none;
+    }
     .list-item {
       font-size: 18px;
       padding: 10px 0;
@@ -64,6 +90,18 @@ header {
       border-bottom: 1px solid #e6e8f0;
     }
   }
+  .list-item.active {
+    color: #5b5769;
+    font-weight: bold;
+  }
+}
+.custom-bg-header {
+  transition: 0.1s;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.custom-bg-header.homepage {
+  background-color: rgba(0, 0, 0, 0.349);
 }
 
 @media screen and (max-width: 768px) {
