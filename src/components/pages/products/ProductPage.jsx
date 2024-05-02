@@ -18,7 +18,7 @@ const ProductPage = () => {
         <div className="container d-flex align-items-center h-100">
           <div className="row">
             <div className="col-lg-6 d-flex align-items-center mb-5">
-              <div className="d-flex flex-column d-lg-block">
+              <div className="d-flex flex-column d-lg-block ps-lg-4">
                 <h1 className="banner-page-title text-dark-blue text-center text-lg-start">
                   Expertly Manage <br className="d-none d-lg-block" /> Venues with <br className="d-none d-lg-block" /> Boozno
                 </h1>
@@ -29,7 +29,7 @@ const ProductPage = () => {
               </div>
             </div>
             <div className="col-lg-6 pe-lg-0">
-              <img src={bannerImg} className="w-100" alt="" />
+              <img src={bannerImg} className="w-100 solution-banner-img" alt="" />
             </div>
           </div>
         </div>
@@ -109,11 +109,11 @@ const ProductPage = () => {
       </section>
       {/* Journey Stepper End */}
 
+      {/* Common Sections */}
       <ReadyToTry />
-      {/* FAQ Section Start */}
       <FAQ />
       <RightAnswer />
-      {/* FAQ Section End */}
+      {/* Common Sections End */}
     </div>
   );
 };

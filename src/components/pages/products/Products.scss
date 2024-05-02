@@ -4,8 +4,15 @@
 .menu-device-support-wrapper {
   border-radius: 15px;
 }
+.solution-banner-img {
+  position: relative;
+  right: -50px;
+}
 
 @media screen and (max-width: 992px) {
+  .solution-banner-img {
+    position: static;
+  }
   .solution-first-section {
     margin-top: 50px;
   }
