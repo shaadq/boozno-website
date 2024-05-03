@@ -9,3 +9,11 @@
     font-size: 36px !important;
   }
 }
+@media screen and (min-width: 992px) {
+  .border-bottom-lg-none {
+    border-bottom: none !important;
+  }
+  .border-right-lg {
+    border-right: 1px solid;
+  }
+}

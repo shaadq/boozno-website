@@ -76,8 +76,7 @@
   border-radius: 18px;
   height: 100%;
   padding: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
 }
 .owl-carousel {
   .owl-item {
@@ -121,8 +120,8 @@
   box-shadow: inset 260px 0 30px -20px white, inset -260px 0 30px -20px white;
   z-index: -1; /* This places the pseudo-element behind the content */
 }
-
 .testimonials-card {
+  cursor: grab;
   max-width: 500px;
   width: 100%;
   padding: 20px;
@@ -206,6 +205,23 @@
       width: 100%;
     }
   }
+}
+.gradient-bg-left {
+  background: linear-gradient(to right, #ffffffeb 40%, #ffffff00 100%);
+  left: 0px;
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  z-index: 9;
+}
+.gradient-bg-right {
+  background: linear-gradient(to left, #ffffffeb 40%, #ffffff00 100%);
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  z-index: 9;
 }
 
 @media screen and (max-width: 768px) {
