@@ -97,7 +97,7 @@ const ManagementSimplifiedTabs = () => {
       ],
     },
     Secuirty: {
-      title: "Secuirty",
+      title: "Security",
       content:
         "Create, organise, and track inquiries for single or multiple days. Easily add and customise f&b packages or charge venue rentals. Include notes, reminders, and create quotations. Get real-time updates for overlapping inquiries, view billing summaries, and apply extra charges or discounts. Simplify your inquiry management with Boozno's all-in-one system.",
       img: secimg,
@@ -148,7 +148,7 @@ const ManagementSimplifiedTabs = () => {
       content: <TabContent content={tabContent.ManagementTools} />,
     },
     {
-      title: "Secuirty",
+      title: "Security",
       icon: <SecurityIcon />,
       iconActive: <SecurityIconActive />,
       active: false,

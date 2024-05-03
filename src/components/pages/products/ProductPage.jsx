@@ -92,28 +92,28 @@ const ProductPage = () => {
             </div>
             <div className="col-lg-6">
               <div className="row values-cards-wrapper">
-                <div className="col-6 mb-4">
+                <div className="col-6 mb-3 px-2">
                   <div className="collection-sales-card">
                     <img src={value1} className="mb-3" alt="" />
                     <h5 className="text-dark-blue mb-2 mb-lg-3">Innovation</h5>
                     <p>Consistently strive to surpass the expectations you have from our venue management platform</p>
                   </div>
                 </div>
-                <div className="col-6 mb-4">
+                <div className="col-6 mb-3 px-2">
                   <div className="collection-sales-card custom-values-card">
                     <img src={value2} className="mb-3" alt="" />
                     <h5 className="text-dark-blue mb-2 mb-lg-3">Accountability</h5>
                     <p>Take responsibility for everything on our platform, ensuring transparency in every aspect</p>
                   </div>
                 </div>
-                <div className="col-6 mb-4">
+                <div className="col-6 mb-4 px-2">
                   <div className="collection-sales-card">
                     <img src={value3} className="mb-3" alt="" />
                     <h5 className="text-dark-blue mb-2 mb-lg-3">Reliability</h5>
                     <p>Enforce trust and dependability, ensuring a stable and consistent venue management experience</p>
                   </div>
                 </div>
-                <div className="col-6 mb-4">
+                <div className="col-6 mb-4 px-2">
                   <div className="collection-sales-card custom-values-card">
                     <img src={value4} className="mb-3" alt="" />
                     <h5 className="text-dark-blue mb-2 mb-lg-3">Commitment</h5>

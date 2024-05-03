@@ -2,7 +2,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Header.scss";
 import { GlobeIconDark } from "../../../assets/img/svg";
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const MenuOffcanvas = ({ show, setShow, headerList, setHeaderList }) => {
   const handleClose = () => setShow(false);

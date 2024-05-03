@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.scss";
-import { GalaxyImg, GalaxyImgMobile, HeadphoneSolidIcon, NoCardIcon, PlayerIcon, QuotesIcon, SandClockIcon, TopRightArrowIcon, TopRightArrowIconWhite, VenueManagementProblemsImg, YellowCheckIcon } from "../../../assets/img/svg";
+import { GalaxyImg, GalaxyImgMobile, HeadphoneSolidIcon, NoCardIcon, PlayerIcon, QuotesIcon, SandClockIcon, TopRightArrowIcon, TopRightArrowIconWhite, YellowCheckIcon } from "../../../assets/img/svg";
 import img1 from "../../../assets/img/sales-1.png";
 import img2 from "../../../assets/img/sales-2.png";
 import img3 from "../../../assets/img/sales-3.png";
