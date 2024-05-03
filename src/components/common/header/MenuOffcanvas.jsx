@@ -7,29 +7,6 @@ import { useEffect, useState } from "react";
 const MenuOffcanvas = ({ show, setShow, headerList, setHeaderList }) => {
   const handleClose = () => setShow(false);
 
-  // const [headerList, setHeaderList] = useState([
-  //   {
-  //     text: "Home",
-  //     path: "/",
-  //     active: true,
-  //   },
-  //   {
-  //     text: "Solutions",
-  //     path: "/solution",
-  //     active: false,
-  //   },
-  //   {
-  //     text: "Pricing",
-  //     path: "/pricing",
-  //     active: false,
-  //   },
-  //   {
-  //     text: "Blog",
-  //     path: "/blog",
-  //     active: false,
-  //   },
-  // ]);
-
   const location = useLocation();
   const updateActiveHeader = () => {
     // Update headerList to mark the correct path as active
