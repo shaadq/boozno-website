@@ -92,7 +92,7 @@ header {
   }
   .list-item.active {
     color: #5b5769;
-    font-weight: bold;
+    font-family: "Red Hat Bold", sans-serif;
   }
 }
 .custom-bg-header {
@@ -108,7 +108,7 @@ header {
   header {
     .logo-wrapper {
       svg {
-        width: 100%;
+        width: 85%;
       }
     }
 

@@ -121,8 +121,8 @@ const Homepage = () => {
             manage bookings effortlessly
           </p>
           <div className="btns-wrapper">
-            <button className="btn btn-secondary border-rad-45 custom-btn me-3 fw-bold">Get Started</button>
-            <button className="btn btn-light text-dark-blue border-rad-45 custom-btn fw-bold d-flex align-items-center justify-content-center">
+            <button className="btn btn-secondary border-rad-45 custom-btn me-3">Get Started</button>
+            <button className="btn btn-light text-dark-blue border-rad-45 custom-btn d-flex align-items-center justify-content-center">
               <PlayerIcon />
               <div className="ms-1">Schedule Demo</div>
             </button>

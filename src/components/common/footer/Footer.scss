@@ -11,8 +11,12 @@ footer {
     font-size: 20px;
   }
   .footer-links {
+    a {
+      text-decoration: none;
+    }
     .item {
       margin-bottom: 9px;
+      color: #adabb7ab;
     }
     .item:hover {
       color: #ffffffd4;

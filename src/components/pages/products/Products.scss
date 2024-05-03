@@ -8,7 +8,6 @@
   position: relative;
   right: -50px;
 }
-
 .benefits-section-wrapper {
   display: flex;
   flex-direction: column;
@@ -40,11 +39,14 @@
     padding: 10px;
   }
 }
-
 .perc-title {
-  font-family: "Red Hat Extra-bold";
+  font-family: "Red Hat Bold", sans-serif;
   font-size: 46px;
   margin-bottom: 3px;
+}
+.custom-values-card {
+  position: relative;
+  top: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -66,7 +68,7 @@
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    height: 72%;
+    height: 65%;
     width: 100%;
     position: absolute;
     top: 0px;
@@ -76,8 +78,22 @@
     width: 100%;
   }
   .perc-title {
-    font-family: "Red Hat Semi-bold";
+    font-family: "Red Hat bold";
     font-size: 32px;
     margin-bottom: 3px;
+  }
+  .values-cards-wrapper {
+    .collection-sales-card {
+      padding: 10px 0 0 0;
+      h5 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .custom-values-card {
+    position: static;
   }
 }

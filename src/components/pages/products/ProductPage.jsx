@@ -7,6 +7,10 @@ import bannerImg from "../../../assets/img/solution-page-banner-img.png";
 import menuDeviceImg from "../../../assets/img/menu-device-img.svg";
 import stepperImg from "../../../assets/img/journey-stepper.svg";
 import stepperImgMobile from "../../../assets/img/journey-stepper-mobile.svg";
+import value1 from "../../../assets/img/value-1.png";
+import value2 from "../../../assets/img/value-2.png";
+import value3 from "../../../assets/img/value-3.png";
+import value4 from "../../../assets/img/value-4.png";
 import lockImg from "../../../assets/img/privacy-img.svg";
 import ReadyToTry from "../../common/ready-to-try/ReadyToTry";
 
@@ -71,13 +75,66 @@ const ProductPage = () => {
       </section>
       {/* Multi Device Support End  */}
 
+      {/* Values Section */}
+      <section className="py-5">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-5 d-flex align-items-center">
+              <div>
+                <h2 className="section-title text-center text-lg-start text-dark-blue mb-4">
+                  The values that drive <br /> everything we do
+                </h2>
+                <div className="section-subtitle text-center text-lg-start mb-4">
+                  We are a small but growing team. Our expertise <br /> includes bringing efficiency to venue management <br /> tasks and ensuring seamless operations for our clients <br /> with personalised and reliable solutions.
+                </div>
+                <button className="btn btn-primary px-4 border-rad-45 d-none d-lg-block">Talk to Sales</button>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="row values-cards-wrapper">
+                <div className="col-6 mb-4">
+                  <div className="collection-sales-card">
+                    <img src={value1} className="mb-3" alt="" />
+                    <h5 className="text-dark-blue mb-2 mb-lg-3">Innovation</h5>
+                    <p>Consistently strive to surpass the expectations you have from our venue management platform</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-4">
+                  <div className="collection-sales-card custom-values-card">
+                    <img src={value2} className="mb-3" alt="" />
+                    <h5 className="text-dark-blue mb-2 mb-lg-3">Accountability</h5>
+                    <p>Take responsibility for everything on our platform, ensuring transparency in every aspect</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-4">
+                  <div className="collection-sales-card">
+                    <img src={value3} className="mb-3" alt="" />
+                    <h5 className="text-dark-blue mb-2 mb-lg-3">Reliability</h5>
+                    <p>Enforce trust and dependability, ensuring a stable and consistent venue management experience</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-4">
+                  <div className="collection-sales-card custom-values-card">
+                    <img src={value4} className="mb-3" alt="" />
+                    <h5 className="text-dark-blue mb-2 mb-lg-3">Commitment</h5>
+                    <p>Dedicate ourselves wholeheartedly to your satisfaction, ensuring unwavering support and service</p>
+                  </div>
+                </div>
+              </div>
+              <button className="btn btn-primary w-100 py-3 border-rad-45 d-lg-none">Talk to Sales</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Values Section End*/}
+
       {/* Benefits Section */}
-      <section className="py-5 position-relative">
+      <section className="py-5 mt-lg-5 position-relative">
         <div className="benefits-bg-mobile"></div>
         <div className="container">
           <div className="benefits-section-wrapper">
             <div className="benefits-bg"></div>
-            <h1 className="section-title fw-bold text-white mt-lg-4 mb-3">Benefits of using Boozno</h1>
+            <h1 className="section-title text-white mt-lg-4 mb-3">Benefits of using Boozno</h1>
             <div className="section-subtitle text-white mb-4">
               Elevate your venue's success story with Boozno, where efficiency isn't just a goal; it's a guarantee. <br /> Lead the way to profit perfection, making every management task a breeze.
             </div>
@@ -85,7 +142,7 @@ const ProductPage = () => {
               <div className="row">
                 <div className="col-6 col-lg-3 border-bottom-lg-none border-bottom border-right border-grey">
                   <div className="benefit-item text-center mb-3 mb-lg-0">
-                    <div className="perc-title fw-bold text-purple">28%</div>
+                    <div className="perc-title text-purple">28%</div>
                     <div className="text-dark-blue">
                       Increase in <br className="d-block d-lg-none" /> monthly <br className="d-none d-lg-block" /> sales
                     </div>
@@ -93,7 +150,7 @@ const ProductPage = () => {
                 </div>
                 <div className="col-6 col-lg-3 border-bottom-lg-none border-bottom border-right-lg border-grey">
                   <div className="benefit-item text-center ">
-                    <div className="perc-title fw-bold text-purple">33%</div>
+                    <div className="perc-title text-purple">33%</div>
                     <div className="text-dark-blue">
                       Improvement in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> productivity
                     </div>
@@ -101,7 +158,7 @@ const ProductPage = () => {
                 </div>
                 <div className="col-6 col-lg-3  border-right border-grey">
                   <div className="benefit-item text-center mt-3 mt-lg-0">
-                    <div className="perc-title fw-bold text-purple">68%</div>
+                    <div className="perc-title text-purple">68%</div>
                     <div className="text-dark-blue">
                       More accuracy in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> forecasting
                     </div>
@@ -109,7 +166,7 @@ const ProductPage = () => {
                 </div>
                 <div className="col-6 col-lg-3">
                   <div className="benefit-item text-center mt-3 mt-lg-0">
-                    <div className="perc-title fw-bold text-purple">45%</div>
+                    <div className="perc-title text-purple">45%</div>
                     <div className="text-dark-blue">
                       Decrease in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> cost
                     </div>

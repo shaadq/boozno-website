@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { FacebookIcon, InstagramIcon, LinkedinIcon, Logo, MailIcon, PhoneIcon, TwitterIcon } from "../../../assets/img/svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -36,11 +37,21 @@ const Footer = () => {
                 <div className="text-white footer-link-title">Usefull Links</div>
                 <div className="col-6">
                   <div className="footer-links text-light">
-                    <div className="item">Home</div>
-                    <div className="item">Solutions</div>
-                    <div className="item">Pricing Plan</div>
-                    <div className="item">About Us</div>
-                    <div className="item">Career</div>
+                    <Link to={"/"}>
+                      <div className="item">Home</div>
+                    </Link>
+                    <Link to={"/solution"}>
+                      <div className="item">Solutions</div>
+                    </Link>{" "}
+                    <Link to={"/pricing"}>
+                      <div className="item">Pricing Plan</div>
+                    </Link>{" "}
+                    <Link to={""}>
+                      <div className="item">About Us</div>
+                    </Link>
+                    <Link to={"/"}>
+                      <div className="item">Career</div>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-6">

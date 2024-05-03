@@ -18,7 +18,7 @@ const TitleUpdater = () => {
         document.title = "Boozno - Blog";
         break;
       default:
-        document.title = "My App";
+        document.title = "Boozno";
     }
   }, [location]);
   return null;

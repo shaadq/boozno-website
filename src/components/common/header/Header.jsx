@@ -36,7 +36,7 @@ const Header = ({ homepage }) => {
     },
     {
       text: "Blog",
-      path: "/blog",
+      path: "",
       active: false,
     },
   ]);
@@ -62,7 +62,7 @@ const Header = ({ homepage }) => {
       <Navbar expand="lg" className={`py-2 py-md-4 custom-header ${!isScrolledToTop ? "custom-bg-header" : ""}  ${homepage ? "homepage" : ""}`}>
         <div className="container d-flex justify-content-center">
           <div className="row w-100">
-            <div className="col-6 col-lg-3">
+            <div className="col-6 col-lg-3 ps-0">
               {" "}
               <div className="logo-wrapper">{homepage ? <Logo /> : <LogoPurple />}</div>
             </div>
