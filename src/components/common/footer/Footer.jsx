@@ -42,11 +42,11 @@ const Footer = () => {
                     </Link>
                     <Link to={"/solution"}>
                       <div className="item">Solutions</div>
-                    </Link>{" "}
+                    </Link>
                     <Link to={"/pricing"}>
                       <div className="item">Pricing Plan</div>
-                    </Link>{" "}
-                    <Link to={""}>
+                    </Link>
+                    <Link to={"/aboutus"}>
                       <div className="item">About Us</div>
                     </Link>
                     <Link to={"/"}>

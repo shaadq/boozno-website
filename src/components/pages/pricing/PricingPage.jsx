@@ -42,7 +42,7 @@ const PricingPage = () => {
           <div className="d-flex align-items-center justify-content-center">
             <div
               className={` ${
-                !isChecked ? "text-darkgrey2 fw-bold" : "text-light-grey"
+                !isChecked ? "text-darkgrey2 fw-semibold" : "text-light-grey"
               }`}
             >
               Bill Monthly
@@ -57,7 +57,7 @@ const PricingPage = () => {
             </div>
             <div
               className={` ${
-                isChecked ? "text-darkgrey2 fw-bold" : "text-light-grey"
+                isChecked ? "text-darkgrey2 fw-semibold" : "text-light-grey"
               }`}
             >
               Bill Annualy
