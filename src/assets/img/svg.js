@@ -3466,3 +3466,53 @@ export const CheckIconPurple = () => (
     </defs>
   </svg>
 );
+export const MinusIcon = () => (
+  <svg
+    width="5"
+    height="2"
+    viewBox="0 0 5 2"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0.952 0.456H5.008V1.912H0.952V0.456Z" fill="#20184E" />
+  </svg>
+);
+export const PlusIcon = () => (
+  <svg
+    width="7"
+    height="7"
+    viewBox="0 0 7 7"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.384 4.46H4.002V6.974H2.952V4.46H0.582V3.488H2.952V0.98H4.002V3.488H6.384V4.46Z"
+      fill="#20184E"
+    />
+  </svg>
+);
+export const GreyDashIcon = () => (
+  <svg
+    width="14"
+    height="2"
+    viewBox="0 0 14 2"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M1 1H13" stroke="#ABB2B3" stroke-linecap="round" />
+  </svg>
+);
+export const PurpleCheckIconStyle = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M14 0.5L4.7 10.725L2 8.675H0.5L4.7 15.5L15.5 0.5H14Z"
+      fill="#7D63EC"
+    />
+  </svg>
+);

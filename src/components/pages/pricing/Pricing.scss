@@ -1,5 +1,3 @@
-.section {
-}
 .switch-input-wrapper {
   .form-switch {
     display: flex;
@@ -43,9 +41,57 @@
   }
   .card-list-text {
     font-size: 15px;
-    font-family: "Red Hat Bold", sans-serif;
+    font-family: "Red Hat Semi-bold", sans-serif;
+  }
+}
+.no-of-users-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .counter-wrapper {
+    padding: 3px 4px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-wrapper {
+    padding: 0 10px;
+    cursor: pointer;
   }
 }
 .border-purple {
   border: 1px solid #a894ff;
+}
+.plans-table-titles {
+  font-size: 17px;
+}
+.plans-list-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  border-radius: 10px;
+
+  .list-item {
+    border-bottom: 1px solid rgb(102 102 102 / 13%);
+    padding: 15px 0;
+
+    .text-grey3 {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .plans-table-title {
+    font-size: 16px;
+  }
+  .plans-table-titles {
+    font-size: 13px;
+  }
+  .plans-list-wrapper {
+    .list-item {
+      .text-grey3 {
+        font-size: 15px;
+      }
+    }
+  }
 }

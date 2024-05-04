@@ -2,7 +2,8 @@
 }
 .custom-tab-wrapper {
   // box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 45px;
   display: flex;
   justify-content: center;
@@ -38,16 +39,16 @@
         opacity: 0.6;
       }
     }
-    .custom-tab-item:hover {
-      .title {
-        opacity: 1;
-      }
-    }
+    // .custom-tab-item:hover {
+    //   .title {
+    //     opacity: 1;
+    //   }
+    // }
     .custom-tab-item.active {
       background-color: #7d63ec;
       .title {
         opacity: 1;
-        font-weight: bold;
+        font-family: "Red Hat Semi-bold", sans-serif;
       }
     }
   }
@@ -112,6 +113,12 @@
           margin-left: 10px;
         }
       }
+
+      // .custom-tab-item:hover {
+      //   .title {
+      //     opacity: 0.6;
+      //   }
+      // }
 
       .active {
         z-index: 99;

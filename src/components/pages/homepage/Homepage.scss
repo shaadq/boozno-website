@@ -76,7 +76,8 @@
   border-radius: 18px;
   height: 100%;
   padding: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
 }
 .owl-carousel {
   .owl-item {
@@ -156,7 +157,6 @@
     .title {
       font-size: 18px;
       color: #555265;
-      font-weight: bold;
     }
   }
 }
