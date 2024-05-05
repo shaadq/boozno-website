@@ -4,7 +4,7 @@ import img from "../../../assets/img/ready-img.svg";
 
 const ReadyToTry = () => {
   return (
-    <section className="pt-0 pb-5">
+    <section className="pt-5 pb-5">
       <div className="container">
         <div className="ready-container">
           <div className="bg-pink"></div>

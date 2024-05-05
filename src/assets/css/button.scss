@@ -12,9 +12,11 @@
   background-color: #0cddd9;
   border-color: #0cddd9;
 }
-.btn-secondary:hover {
-  background-color: #0cdddac2;
-  border-color: #0cdddac2;
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #0cddd9 !important;
+  border-color: #0cddd9 !important;
 }
 .btn-outline-primary {
   border-color: #7d63ec;
@@ -25,6 +27,30 @@
 .btn-outline-primary:active {
   background-color: #7d63ec !important;
   border-color: #7d63ec;
+  color: white;
+}
+.btn-success {
+  background-color: #0ac9b2;
+  border-color: #0ac9b2;
+  color: #ffffff;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #0ac9b2 !important;
+  border-color: #0ac9b2 !important;
+  color: white;
+}
+.btn-outline-success {
+  background-color: #ffffff;
+  border-color: #0ac9b2;
+  color: #0ac9b2;
+}
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+  background-color: #0ac9b2 !important;
+  border-color: #0ac9b2 !important;
   color: white;
 }
 .start-now-btn {

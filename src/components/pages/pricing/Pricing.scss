@@ -80,6 +80,38 @@
     }
   }
 }
+.pricing-2-cards-card {
+  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .custom-bg-incard {
+    position: absolute;
+    width: 100%;
+    height: 121%;
+    top: -40px;
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: rgba(124, 99, 236, 0.0941176471) 0px -35px 92px;
+  }
+}
+.pricing-values-card {
+  height: 100%;
+  position: relative;
+  .card-white-bg {
+    position: absolute;
+    width: 100%;
+    height: 77%;
+    bottom: 0px;
+    z-index: -1;
+    border-radius: 15px;
+    // box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    //   rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    box-shadow: #7c63ec18 0px -51px 92px;
+  }
+}
 @media screen and (max-width: 992px) {
   .plans-table-title {
     font-size: 16px;
