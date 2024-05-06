@@ -37,7 +37,7 @@ function App() {
             <Route path="services" element={<DynamicTabContent data={servicesFaq} />} />
           </Route>
 
-          <Route path="/tabs" element={<LegalTabs />}>
+          <Route path="/legal" element={<LegalTabs />}>
             <Route path="termsconditons" element={<TermsConditions />} />
             <Route path="privacypolicy" element={<PrivacyPolicy />} />
             <Route path="cookiespolicy" element={<CookiesPolicy />} />
