@@ -8,33 +8,33 @@ const LegalTabs = () => {
     {
       title: "Terms and Conditions",
       subtitle: "Terms of service are the legal agreements between a service provider and a person who wants to use that service.",
-      link: "/tabs/termsconditons",
+      link: "/legal/termsconditons",
       active: true,
     },
     {
       title: "Privacy Policy",
       subtitle: "The Policy below is effective since August 10, 2023. You can read the previous version of the Privacy Policy.",
-      link: "/tabs/privacypolicy",
+      link: "/legal/privacypolicy",
       active: false,
     },
     {
       title: "Cookies Policy",
       subtitle: "Last updated: April 12, 2023",
-      link: "/tabs/cookiespolicy",
+      link: "/legal/cookiespolicy",
       active: false,
     },
     {
       title: "GDPR",
       maintitle: "GDPR Compliance",
       subtitle: "Everything you need to know about Boozno.com's compliance with the Do Not Sell My Personal Information",
-      link: "/tabs/gdpr",
+      link: "/legal/gdpr",
       active: false,
     },
     {
       title: "Do No Sell MPI",
       maintitle: "Do Not Sell My Personal Information",
       subtitle: "Everything you need to know about Boozno.com's compliance with the Do Not Sell My Personal Information",
-      link: "/tabs/mpi",
+      link: "/legal/mpi",
       active: false,
     },
   ]);

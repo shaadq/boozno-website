@@ -69,22 +69,22 @@ const Footer = () => {
                 <div className="col-6">
                   <div className="text-white footer-link-title">Legal</div>
                   <div className="footer-links text-light">
-                    <Link to={"/tabs/termsconditons"}>
+                    <Link to={"/legal/termsconditons"}>
                       <div className="item">Terms of Services</div>
                     </Link>
-                    <Link to={"/tabs/privacypolicy"}>
+                    <Link to={"/legal/privacypolicy"}>
                       <div className="item">Privacy Policy</div>
                     </Link>
                     <Link to={"/faqs/product"}>
                       <div className="item">FAQ's</div>
                     </Link>
-                    <Link to={"/tabs/cookiespolicy"}>
+                    <Link to={"/legal/cookiespolicy"}>
                       <div className="item">Cookie Policy</div>
                     </Link>
-                    <Link to={"/tabs/mpi"}>
+                    <Link to={"/legal/mpi"}>
                       <div className="item whitespace-nowrap">Do Not Sell My Personal Info</div>
                     </Link>
-                    <Link to={"/tabs/gdpr"}>
+                    <Link to={"/legal/gdpr"}>
                       <div className="item whitespace-nowrap">GDPR Compliance</div>
                     </Link>
                   </div>
