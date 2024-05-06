@@ -49,8 +49,8 @@ const LegalTabs = () => {
   }, [location]);
 
   return (
-    <div className="pt-5 mt-4">
-      <section className="py-5">
+    <div className="pt-0 pt-lg-4">
+      <section className="py-5 mt-5">
         <div className="container">
           {legaltabs.map((d, i) => (
             <div key={i}>{d.active ? <h1 className="section-title text-dark-blue">{d.maintitle ? d.maintitle : d.title}</h1> : <></>}</div>

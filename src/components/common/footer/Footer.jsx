@@ -100,7 +100,6 @@ const Footer = () => {
                       <PhoneIcon />
                       <div className="ms-2">+91 12345 54321</div>
                     </div>
-                    <div className="item">Contact Us</div>
                   </div>
                 </div>
               </div>

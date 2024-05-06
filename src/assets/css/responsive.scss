@@ -11,6 +11,12 @@
   .scale-95 {
     transform: scale(1) !important;
   }
+  .custom-page-tabs {
+    justify-content: start !important;
+    .tab-item {
+      padding: 8px 20px !important;
+    }
+  }
 }
 @media screen and (min-width: 992px) {
   .border-bottom-lg-none {

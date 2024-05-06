@@ -38,7 +38,7 @@ function App() {
           </Route>
 
           <Route path="/tabs" element={<LegalTabs />}>
-            <Route path="termsconditons" element={<TermsConditions />} /> {/* Default tab */}
+            <Route path="termsconditons" element={<TermsConditions />} />
             <Route path="privacypolicy" element={<PrivacyPolicy />} />
             <Route path="cookiespolicy" element={<CookiesPolicy />} />
             <Route path="gdpr" element={<GDPR />} />

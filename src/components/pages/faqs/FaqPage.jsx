@@ -27,13 +27,6 @@ const FaqPage = () => {
     },
   ]);
 
-  const handleTabClick = (index) => {
-    const updatedTabs = tabs.map((tab, i) => {
-      return { ...tab, active: i === index };
-    });
-    setTabs(updatedTabs);
-  };
-
   useEffect(() => {
     setTabs((prevTabs) =>
       prevTabs.map((tab) => ({
@@ -57,9 +50,6 @@ const FaqPage = () => {
             ))}
           </div>
           <div className="custom-faq-accordion mt-4">
-            {/* {tabs.map((data, index) => (
-              <div key={index}>{data.active ? <DynamicTabContent data={data.content} /> : <div></div>}</div>
-            ))} */}
             <Outlet />
           </div>
         </div>
