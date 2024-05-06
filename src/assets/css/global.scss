@@ -192,3 +192,31 @@ h6 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer and Edge (legacy) */
 }
+
+// Tabs
+.custom-page-tabs {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+  .tab-item {
+    font-family: "Red Hat Semi-bold", sans-serif !important;
+    white-space: nowrap;
+    padding: 8px 30px;
+    background-color: #f2f2f2;
+    border-radius: 45px;
+    color: #666666;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .tab-item.active {
+    background-color: #7d63ec;
+    color: #ffffff;
+  }
+}
+.custom-page-tabs::-webkit-scrollbar {
+  display: none;
+}

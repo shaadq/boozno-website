@@ -64,7 +64,9 @@ const Header = ({ homepage }) => {
           <div className="row w-100">
             <div className="col-6 col-lg-3 ps-0">
               {" "}
-              <div className="logo-wrapper">{homepage ? <Logo /> : <LogoPurple />}</div>
+              <Link to={"/"}>
+                <div className="logo-wrapper">{homepage ? <Logo /> : <LogoPurple />}</div>
+              </Link>
             </div>
             <div className="d-none d-lg-block col-md-4">
               <div className={`header-items d-none d-md-flex ${!homepage ? "homepage-header-items" : ""}`}>

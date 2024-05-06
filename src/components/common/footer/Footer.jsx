@@ -69,14 +69,24 @@ const Footer = () => {
                 <div className="col-6">
                   <div className="text-white footer-link-title">Legal</div>
                   <div className="footer-links text-light">
-                    <div className="item">Terms of Services</div>
-                    <div className="item">Privacy Policy</div>
+                    <Link to={"/tabs/termsconditons"}>
+                      <div className="item">Terms of Services</div>
+                    </Link>
+                    <Link to={"/tabs/privacypolicy"}>
+                      <div className="item">Privacy Policy</div>
+                    </Link>
                     <Link to={"/faqs"}>
                       <div className="item">FAQ's</div>
                     </Link>
-
-                    <div className="item">Cookie Policy</div>
-                    <div className="item whitespace-nowrap">Do Not Sell My Personal Info</div>
+                    <Link to={"/tabs/cookiespolicy"}>
+                      <div className="item">Cookie Policy</div>
+                    </Link>
+                    <Link to={"/tabs/mpi"}>
+                      <div className="item whitespace-nowrap">Do Not Sell My Personal Info</div>
+                    </Link>
+                    <Link to={"/tabs/gdpr"}>
+                      <div className="item whitespace-nowrap">GDPR Compliance</div>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-6">
