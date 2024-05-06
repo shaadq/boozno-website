@@ -13,6 +13,7 @@ import value3 from "../../../assets/img/value-3.png";
 import value4 from "../../../assets/img/value-4.png";
 import lockImg from "../../../assets/img/privacy-img.svg";
 import ReadyToTry from "../../common/ready-to-try/ReadyToTry";
+import Counter from "../../common/counter/Counter";
 
 const ProductPage = () => {
   return (
@@ -142,7 +143,9 @@ const ProductPage = () => {
               <div className="row">
                 <div className="col-6 col-lg-3 border-bottom-lg-none border-bottom border-right border-grey">
                   <div className="benefit-item text-center mb-3 mb-lg-0">
-                    <div className="perc-title text-purple">28%</div>
+                    <div className="perc-title text-purple">
+                      <Counter from={0} to={28} duration={2000} />%
+                    </div>
                     <div className="text-dark-blue">
                       Increase in <br className="d-block d-lg-none" /> monthly <br className="d-none d-lg-block" /> sales
                     </div>
@@ -150,7 +153,9 @@ const ProductPage = () => {
                 </div>
                 <div className="col-6 col-lg-3 border-bottom-lg-none border-bottom border-right-lg border-grey">
                   <div className="benefit-item text-center ">
-                    <div className="perc-title text-purple">33%</div>
+                    <div className="perc-title text-purple">
+                      <Counter from={0} to={33} duration={2000} />%
+                    </div>
                     <div className="text-dark-blue">
                       Improvement in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> productivity
                     </div>
@@ -158,7 +163,9 @@ const ProductPage = () => {
                 </div>
                 <div className="col-6 col-lg-3  border-right border-grey">
                   <div className="benefit-item text-center mt-3 mt-lg-0">
-                    <div className="perc-title text-purple">68%</div>
+                    <div className="perc-title text-purple">
+                      <Counter from={0} to={68} duration={2000} />%
+                    </div>
                     <div className="text-dark-blue">
                       More accuracy in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> forecasting
                     </div>
@@ -166,7 +173,9 @@ const ProductPage = () => {
                 </div>
                 <div className="col-6 col-lg-3">
                   <div className="benefit-item text-center mt-3 mt-lg-0">
-                    <div className="perc-title text-purple">45%</div>
+                    <div className="perc-title text-purple">
+                      <Counter from={0} to={45} duration={2000} />%
+                    </div>
                     <div className="text-dark-blue">
                       Decrease in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> cost
                     </div>

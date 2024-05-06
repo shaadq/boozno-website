@@ -1,7 +1,7 @@
 import React from "react";
 
-const TermsConditions = () => {
-  return <section className="py-5">TermOfService</section>;
+const TermOfService = () => {
+  return <div>TermOfService</div>;
 };
 
-export default TermsConditions;
+export default TermOfService;
