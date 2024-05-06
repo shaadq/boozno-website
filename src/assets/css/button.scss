@@ -1,3 +1,8 @@
+.btn {
+  white-space: nowrap;
+}
+
+// Button Primary
 .btn-primary {
   background-color: #7d63ec;
   border-color: #7d63ec;
@@ -8,6 +13,8 @@
   background-color: #7d63ec !important;
   border-color: #7d63ec !important;
 }
+
+// Button Secondary
 .btn-secondary {
   background-color: #0cddd9;
   border-color: #0cddd9;
@@ -18,6 +25,8 @@
   background-color: #0cddd9 !important;
   border-color: #0cddd9 !important;
 }
+
+// Button Outline Primary
 .btn-outline-primary {
   border-color: #7d63ec;
   color: #7d63ec;
@@ -29,6 +38,8 @@
   border-color: #7d63ec;
   color: white;
 }
+
+// Button Success
 .btn-success {
   background-color: #0ac9b2;
   border-color: #0ac9b2;
@@ -41,6 +52,8 @@
   border-color: #0ac9b2 !important;
   color: white;
 }
+
+// Button Outline Success
 .btn-outline-success {
   background-color: #ffffff;
   border-color: #0ac9b2;

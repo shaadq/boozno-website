@@ -76,8 +76,7 @@
   border-radius: 18px;
   height: 100%;
   padding: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 120px 61px 17px inset;
 }
 .owl-carousel {
   .owl-item {
@@ -168,6 +167,13 @@
   svg {
     width: 100%;
   }
+
+  // circle:hover {
+  //   box-shadow: #7c63ec36 0px 8px 24px;
+  //   cursor: pointer;
+  //   outline: 1px solid #7d63ec;
+  //   border-radius: 50%;
+  // }
 }
 .galaxy-img-wrapper-web {
   margin-top: -80px;

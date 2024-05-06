@@ -6,6 +6,8 @@ import ProductPage from "./components/pages/products/ProductPage";
 import ScrollToTop from "./utils/ScrollToTop";
 import TitleUpdater from "./utils/TitleUpdater";
 import AboutUsPage from "./components/pages/aboutus/AboutUsPage";
+import NotFoundPage from "./components/pages/notfound/NotFoundPage";
+import FaqPage from "./components/pages/faqs/FaqPage";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/solution" element={<ProductPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/faqs" element={<FaqPage />} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
     </div>

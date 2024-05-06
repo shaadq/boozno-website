@@ -71,7 +71,10 @@ const Footer = () => {
                   <div className="footer-links text-light">
                     <div className="item">Terms of Services</div>
                     <div className="item">Privacy Policy</div>
-                    <div className="item">FAQ's</div>
+                    <Link to={"/faqs"}>
+                      <div className="item">FAQ's</div>
+                    </Link>
+
                     <div className="item">Cookie Policy</div>
                     <div className="item whitespace-nowrap">Do Not Sell My Personal Info</div>
                   </div>
@@ -87,6 +90,7 @@ const Footer = () => {
                       <PhoneIcon />
                       <div className="ms-2">+91 12345 54321</div>
                     </div>
+                    <div className="item">Contact Us</div>
                   </div>
                 </div>
               </div>
