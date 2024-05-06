@@ -43,13 +43,18 @@
     font-size: 15px;
     font-family: "Red Hat Semi-bold", sans-serif;
   }
+  .card-list-text2 {
+    font-size: 15px;
+    font-family: "Red Hat Semi-bold", sans-serif;
+    color: #666666;
+  }
 }
 .no-of-users-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   .counter-wrapper {
-    padding: 3px 4px;
+    // padding: 3px 4px;
     border: 1px solid lightgrey;
     border-radius: 7px;
     display: flex;
@@ -57,8 +62,15 @@
     justify-content: center;
   }
   .icon-wrapper {
+    user-select: none;
     padding: 0 10px;
     cursor: pointer;
+  }
+  .br {
+    border-right: 1px solid lightgrey;
+  }
+  .bl {
+    border-left: 1px solid lightgrey;
   }
 }
 .border-purple {

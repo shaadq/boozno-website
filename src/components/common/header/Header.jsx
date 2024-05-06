@@ -1,9 +1,9 @@
-import "./Header.scss";
-import Navbar from "react-bootstrap/Navbar";
-import { GlobeIcon, GlobeIconGrey, HeadphoneIcon, HeadphoneIconGrey, ListIcon, ListIconGrey, Logo, LogoPurple } from "../../../assets/img/svg";
-import MenuOffcanvas from "./MenuOffcanvas";
 import { useEffect, useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
 import { Link, useLocation } from "react-router-dom";
+import { GlobeIcon, GlobeIconGrey, HeadphoneIcon, HeadphoneIconGrey, ListIcon, ListIconGrey, Logo, LogoPurple } from "../../../assets/img/svg";
+import "./Header.scss";
+import MenuOffcanvas from "./MenuOffcanvas";
 
 const Header = ({ homepage }) => {
   const [isScrolledToTop, setIsScrolledToTop] = useState(true);

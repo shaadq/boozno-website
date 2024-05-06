@@ -1,5 +1,20 @@
 import React from "react";
-import "./Homepage.scss";
+import OwlCarousel from "react-owl-carousel";
+import { Link } from "react-router-dom";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ankit from "../../../assets/img/ankit.png";
+import better from "../../../assets/img/better.png";
+import saveIcon from "../../../assets/img/celebration.png";
+import img1 from "../../../assets/img/sales-1.png";
+import img2 from "../../../assets/img/sales-2.png";
+import img3 from "../../../assets/img/sales-3.png";
+import img4 from "../../../assets/img/sales-4.png";
+import img5 from "../../../assets/img/sales-5.png";
+import img6 from "../../../assets/img/sales-6.png";
+import img7 from "../../../assets/img/sales-7.png";
+import img8 from "../../../assets/img/sales-8.png";
+import img9 from "../../../assets/img/sales-9.png";
 import {
   GalaxyImg,
   GalaxyImgMobile,
@@ -12,27 +27,12 @@ import {
   TopRightArrowIconWhite,
   YellowCheckIcon,
 } from "../../../assets/img/svg";
-import img1 from "../../../assets/img/sales-1.png";
-import img2 from "../../../assets/img/sales-2.png";
-import img3 from "../../../assets/img/sales-3.png";
-import img4 from "../../../assets/img/sales-4.png";
-import img5 from "../../../assets/img/sales-5.png";
-import img6 from "../../../assets/img/sales-6.png";
-import img7 from "../../../assets/img/sales-7.png";
-import img8 from "../../../assets/img/sales-8.png";
-import img9 from "../../../assets/img/sales-9.png";
-import ankit from "../../../assets/img/ankit.png";
-import better from "../../../assets/img/better.png";
-import venueManageImg from "../../../assets/img/venue-manage-img.png";
-import venueManageImgMobile from "../../../assets/img/venue-manage-img-mobile.png";
-import saveIcon from "../../../assets/img/celebration.png";
 import taj from "../../../assets/img/taj-img.png";
+import venueManageImgMobile from "../../../assets/img/venue-manage-img-mobile.png";
+import venueManageImg from "../../../assets/img/venue-manage-img.png";
 import FAQ from "../../common/faq/FAQ";
 import RightAnswer from "../../common/right-answer/RightAnswer";
-import OwlCarousel from "react-owl-carousel";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import { Link } from "react-router-dom";
+import "./Homepage.scss";
 
 const Homepage = () => {
   let salesList = [

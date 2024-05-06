@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Red Hat Regular";
-  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Red Hat Bold";
@@ -9,13 +8,11 @@
 }
 @font-face {
   font-family: "Red Hat Semi-bold";
-  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Red Hat Extra-bold";
-  src: url("../font/red-hat-display/RedHatDisplay-ExtraBold.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-ExtraBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Red Hat Light";
@@ -23,8 +20,7 @@
 }
 @font-face {
   font-family: "Red Hat Italic";
-  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf")
-    format("truetype");
+  src: url("../font/red-hat-display/RedHatDisplay-Italic.ttf") format("truetype");
 }
 
 body {
@@ -79,6 +75,9 @@ h6 {
 }
 .banner-page-title {
   font-size: 48px;
+}
+.fs-15 {
+  font-size: 15px;
 }
 .fs-17 {
   font-size: 17px;
@@ -148,6 +147,9 @@ h6 {
 .cursor-pointer {
   cursor: pointer;
 }
+.cursor-nodrop {
+  cursor: no-drop !important;
+}
 .scale-95 {
   transform: scale(0.95);
 }
@@ -180,4 +182,13 @@ h6 {
 }
 .mb-6 {
   margin-bottom: 90px;
+}
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+.no-select {
+  user-select: none; /* Standard property */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer and Edge (legacy) */
 }

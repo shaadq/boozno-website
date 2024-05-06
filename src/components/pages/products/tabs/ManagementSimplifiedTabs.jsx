@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import "./Tabs.scss";
+import bookingimg from "../../../../assets/img/Booking.svg";
+import availabilityimg from "../../../../assets/img/availabilitycalender.svg";
+import inquiriesimg from "../../../../assets/img/inquiries.svg";
+import mtoolsimg from "../../../../assets/img/mtools.svg";
+import onboardingimg from "../../../../assets/img/onboarding.svg";
+import secimg from "../../../../assets/img/security.svg";
 import {
   AvailabilityCalenderActiveIcon,
   AvailabilityCalenderIcon,
@@ -16,13 +21,7 @@ import {
   SettingIconActive,
 } from "../../../../assets/img/svg";
 import TabContent from "./TabContent";
-import inquiryiesimg from "../../../../assets/img/tab-img-1.png";
-import availabilityimg from "../../../../assets/img/availabilitycalender.svg";
-import inquiriesimg from "../../../../assets/img/inquiries.svg";
-import bookingimg from "../../../../assets/img/Booking.svg";
-import onboardingimg from "../../../../assets/img/onboarding.svg";
-import mtoolsimg from "../../../../assets/img/mtools.svg";
-import secimg from "../../../../assets/img/security.svg";
+import "./Tabs.scss";
 
 const ManagementSimplifiedTabs = () => {
   let tabContent = {
