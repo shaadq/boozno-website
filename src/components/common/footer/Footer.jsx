@@ -57,9 +57,15 @@ const Footer = () => {
                 <div className="col-6">
                   <div className="footer-links text-light">
                     <div className="item">Blogs</div>
-                    <div className="item">Talk to Sales</div>
-                    <div className="item">Schedule Demo</div>
-                    <div className="item">Contact Us</div>
+                    <Link to={"/talktosales"}>
+                      <div className="item">Talk to Sales</div>
+                    </Link>
+                    <Link to={"/scheduledemo"}>
+                      <div className="item">Schedule Demo</div>
+                    </Link>
+                    <Link to={"/contactus"}>
+                      <div className="item">Contact Us</div>
+                    </Link>
                   </div>
                 </div>
               </div>

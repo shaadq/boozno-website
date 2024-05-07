@@ -81,8 +81,9 @@ const Header = ({ homepage }) => {
               <div className="header-components">
                 <div className="header-component-item talk-to-sales-wrapper">
                   {homepage ? <HeadphoneIcon /> : <HeadphoneIconGrey />}
-
-                  <div className={`${homepage ? "text-white" : "text-greyheader"} ms-2 whitespace-nowrap`}>Talk to Sales</div>
+                  <Link to={"/talktosales"} className="text-decoration-none">
+                    <div className={`${homepage ? "text-white" : "text-greyheader"} ms-2 whitespace-nowrap`}>Talk to Sales</div>
+                  </Link>
                 </div>
                 <div className="d-none d-lg-block header-component-item">{homepage ? <GlobeIcon /> : <GlobeIconGrey />}</div>
 

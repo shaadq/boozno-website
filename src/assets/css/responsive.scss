@@ -19,6 +19,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .h-lg-100vh {
+    height: 100vh !important;
+  }
   .border-bottom-lg-none {
     border-bottom: none !important;
   }

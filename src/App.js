@@ -16,6 +16,9 @@ import GDPR from "./components/pages/legal-tabs/tabs/GDPR";
 import MPI from "./components/pages/legal-tabs/tabs/MPI";
 import DynamicTabContent from "./components/pages/faqs/DynamicTabContent";
 import { productFaq, subPlanFaq, servicesFaq } from "./components/pages/faqs/data";
+import TalktoSales from "./components/pages/forms/TalktoSales";
+import ScheduleDemo from "./components/pages/forms/ScheduleDemo";
+import ContactUs from "./components/pages/forms/ContactUs";
 
 function App() {
   return (
@@ -24,12 +27,15 @@ function App() {
       <TitleUpdater />
       <Layout>
         <Routes>
+          <Route path="/*" element={<NotFoundPage />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/solution" element={<ProductPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/faqs" element={<FaqPage />} />
-          <Route path="/*" element={<NotFoundPage />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/talktosales" element={<TalktoSales />} />
+          <Route path="/scheduledemo" element={<ScheduleDemo />} />
 
           <Route path="/faqs" element={<FaqPage />}>
             <Route path="product" element={<DynamicTabContent data={productFaq} />} />

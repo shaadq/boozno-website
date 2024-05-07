@@ -1,0 +1,22 @@
+.custom-form-input {
+  padding: 11px 20px !important;
+  border-radius: 45px !important;
+}
+.dynamic-form-wrapper {
+  width: 90%;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: inset -8px 0px 19px rgb(105 72 251 / 10%), rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  textarea {
+    border-radius: 16px;
+    max-height: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dynamic-form-wrapper {
+    width: 100%;
+    padding: 25px;
+  }
+}
