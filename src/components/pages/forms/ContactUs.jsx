@@ -106,7 +106,7 @@ const ContactUs = () => {
 
   return (
     <div>
-      <section className="py-5 h-auto h-lg-100vh h-100vh d-flex align-items-center justify-content-center w-100">
+      <section className="py-5 h-auto d-flex align-items-center justify-content-center w-100">
         <div className="container d-flex align-items-center justify-content-center w-100">
           <div className="dynamic-form-wrapper mt-4">
             <div className="row">
