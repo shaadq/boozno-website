@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./Forms.scss";
-import Common from "./Common";
-import emailjs from "emailjs-com";
 import axios from "axios";
+import React, { useState } from "react";
+import Common from "./Common";
+import "./Forms.scss";
 
 const ContactUs = () => {
+  const [show, setShow] = useState(false);
   let formFields = [
     {
       label: "First Name",
@@ -43,6 +43,15 @@ const ContactUs = () => {
     },
   ];
 
+  const initialFormData = formFields.reduce((acc, field) => {
+    if (field.type === "select" && field.options.length > 0) {
+      acc[field.name] = field.options[0].value; // Default to the first option
+    } else {
+      acc[field.name] = ""; // Default empty for other fields
+    }
+    return acc;
+  }, {});
+
   const [formData, setFormData] = useState(
     formFields.reduce((acc, field) => {
       acc[field.name] = "";
@@ -77,7 +86,8 @@ const ContactUs = () => {
     // Node js backend server
     try {
       const response = await axios.post("http://localhost:5000/send-email", templateParams);
-      console.log(response.data.message);
+      setFormData(initialFormData); // Reset the form data
+      setShow(true); // Show thank you modal
     } catch (error) {
       console.error("Failed to send email", error);
     }
@@ -112,7 +122,7 @@ const ContactUs = () => {
                       {formFields.map((data, index) => (
                         <div className={`${data.colClass} mb-4`} key={index}>
                           <label className="form-label text-grey2 fw-semibold">{data.label}</label>
-                          {data.type === "textarea" ? <textarea className="form-control" name={data.name} rows="3" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler}></textarea> : <input type={data.type} name={data.name} className="form-control custom-form-input" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} />}
+                          {data.type === "textarea" ? <textarea className="form-control" name={data.name} rows="3" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} required></textarea> : <input type={data.type} name={data.name} className="form-control custom-form-input" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} required />}
                         </div>
                       ))}
                     </div>

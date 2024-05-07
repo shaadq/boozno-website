@@ -54,7 +54,8 @@ Last Name: ${lastName}
 Email: ${emailAddress}
 Phone: ${phoneNumber}
 Company name: ${companyName}
-Team Size: ${teamSize} people`
+Team Size: ${teamSize} people
+`
     : scheduleform
     ? `
 We have received an inquiry about talking to our sales team. Below are the details:

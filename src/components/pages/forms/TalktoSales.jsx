@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./Forms.scss";
 import Common from "./Common";
 import axios from "axios";
+import ThankyouModal from "../../common/Modal/ThankyouModal";
 
 const TalktoSales = () => {
+  const [show, setShow] = useState(false);
   let formFields = [
     {
       label: "First Name",
@@ -58,6 +60,15 @@ const TalktoSales = () => {
     },
   ];
 
+  const initialFormData = formFields.reduce((acc, field) => {
+    if (field.type === "select" && field.options.length > 0) {
+      acc[field.name] = field.options[0].value; // Default to the first option
+    } else {
+      acc[field.name] = ""; // Default empty for other fields
+    }
+    return acc;
+  }, {});
+
   const [formData, setFormData] = useState(
     formFields.reduce((acc, field) => {
       acc[field.name] = "";
@@ -79,7 +90,7 @@ const TalktoSales = () => {
 
     const templateParams = {
       subject: "Talk to Sales Inquiry Received ",
-      scheduleform: true,
+      talksalesform: true,
       firstName: formData.firstName,
       lastName: formData.lastName,
       emailAddress: formData.emailAddress,
@@ -91,13 +102,16 @@ const TalktoSales = () => {
     // Node js backend server
     try {
       const response = await axios.post("http://localhost:5000/send-email", templateParams);
-      console.log(response.data.message);
+      setFormData(initialFormData); // Reset the form data
+      setShow(true); // Show thank you modal
     } catch (error) {
       console.error("Failed to send email", error);
     }
   };
+
   return (
     <div>
+      <ThankyouModal show={show} setShow={setShow} />
       <section className="py-5 h-auto h-lg-100vh h-100vh d-flex align-items-center justify-content-center w-100">
         <div className="container d-flex align-items-center justify-content-center w-100">
           <div className="dynamic-form-wrapper mt-4">
@@ -114,9 +128,7 @@ const TalktoSales = () => {
                       {formFields.map((data, index) => (
                         <div className={`${data.colClass} mb-4`} key={index}>
                           <label className="form-label text-grey2 fw-semibold">{data.label}</label>
-                          {data.type === "textarea" ? (
-                            <textarea className="form-control" name={data.name} rows="3" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler}></textarea>
-                          ) : data.type === "select" ? (
+                          {data.type === "select" ? (
                             <select name={data.name} className="form-select custom-form-input" defaultValue={data.options[0].value} value={formData[data.name]} onChange={inputChangeHandler}>
                               {data.options.map((op, i) => (
                                 <option value={op.value} key={i} selected={index === 1}>
@@ -125,7 +137,7 @@ const TalktoSales = () => {
                               ))}
                             </select>
                           ) : (
-                            <input type={data.type} name={data.name} className="form-control custom-form-input" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} />
+                            <input type={data.type} name={data.name} className="form-control custom-form-input" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} required />
                           )}
                         </div>
                       ))}
