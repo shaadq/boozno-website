@@ -16,6 +16,9 @@ const TitleUpdater = () => {
     "/legal/cookiespolicy": "Boozno - Legal",
     "/legal/gdpr": "Boozno - Legal",
     "/legal/mpi": "Boozno - Legal",
+    "/contactus": "Boozno - Contact us",
+    "/talktosales": "Boozno - Talk to us",
+    "/scheduledemo": "Boozno - Schedule demo",
   };
   const location = useLocation();
   useEffect(() => {
