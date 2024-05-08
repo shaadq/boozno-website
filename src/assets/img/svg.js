@@ -202,9 +202,9 @@ export const TopRightArrowIconWhite = () => (
 );
 export const GlobeIconDark = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#494949" stroke-opacity="0.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M2 12H22" stroke="#494949" stroke-opacity="0.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z" stroke="#494949" stroke-opacity="0.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#494949" strokeOpacity="0.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M2 12H22" stroke="#494949" strokeOpacity="0.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z" stroke="#494949" strokeOpacity="0.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 export const QuotesIcon = () => (
@@ -233,11 +233,11 @@ export const GreenCheckIcon = () => (
 export const GalaxyImg = () => (
   <svg width="1371" height="725" viewBox="0 0 1371 725" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clipPath="url(#clip0_138_42419)">
-      <circle opacity="0.9" cx="682.993" cy="443.626" r="132.372" stroke="url(#paint0_linear_138_42419)" stroke-opacity="0.6" strokeWidth="2" />
-      <circle opacity="0.8" cx="682.486" cy="401.537" r="174.463" stroke="url(#paint1_linear_138_42419)" stroke-opacity="0.6" strokeWidth="2" />
-      <path opacity="0.6" d="M912 346.5C912 473.247 809.028 576 682 576C554.972 576 452 473.247 452 346.5C452 219.753 554.972 117 682 117C809.028 117 912 219.753 912 346.5Z" stroke="url(#paint2_linear_138_42419)" stroke-opacity="0.6" strokeWidth="2" />
-      <circle opacity="0.4" cx="682" cy="292" r="284" stroke="url(#paint3_linear_138_42419)" stroke-opacity="0.6" strokeWidth="2" />
-      <path opacity="0.2" d="M1143 116C1143 370.603 936.827 577 682.5 577C428.173 577 222 370.603 222 116" stroke="url(#paint4_linear_138_42419)" stroke-opacity="0.8" strokeWidth="2" />
+      <circle opacity="0.9" cx="682.993" cy="443.626" r="132.372" stroke="url(#paint0_linear_138_42419)" strokeOpacity="0.6" strokeWidth="2" />
+      <circle opacity="0.8" cx="682.486" cy="401.537" r="174.463" stroke="url(#paint1_linear_138_42419)" strokeOpacity="0.6" strokeWidth="2" />
+      <path opacity="0.6" d="M912 346.5C912 473.247 809.028 576 682 576C554.972 576 452 473.247 452 346.5C452 219.753 554.972 117 682 117C809.028 117 912 219.753 912 346.5Z" stroke="url(#paint2_linear_138_42419)" strokeOpacity="0.6" strokeWidth="2" />
+      <circle opacity="0.4" cx="682" cy="292" r="284" stroke="url(#paint3_linear_138_42419)" strokeOpacity="0.6" strokeWidth="2" />
+      <path opacity="0.2" d="M1143 116C1143 370.603 936.827 577 682.5 577C428.173 577 222 370.603 222 116" stroke="url(#paint4_linear_138_42419)" strokeOpacity="0.8" strokeWidth="2" />
       <g filter="url(#filter0_d_138_42419)">
         <rect x="596.227" y="354.883" width="174.549" height="177.491" rx="87.2746" fill="url(#paint5_linear_138_42419)" />
       </g>
@@ -320,8 +320,8 @@ export const GalaxyImg = () => (
       />
     </g>
     <defs>
-      <filter id="filter0_d_138_42419" x="552.227" y="332.883" width="274.551" height="277.492" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter0_d_138_42419" x="552.227" y="332.883" width="274.551" height="277.492" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="6" dy="28" />
         <feGaussianBlur stdDeviation="25" />
@@ -329,8 +329,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter1_d_138_42419" x="314" y="248" width="340" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter1_d_138_42419" x="314" y="248" width="340" height="340" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="33" dy="59" />
         <feGaussianBlur stdDeviation="50" />
@@ -338,8 +338,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter2_d_138_42419" x="798" y="325" width="340" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter2_d_138_42419" x="798" y="325" width="340" height="340" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="33" dy="59" />
         <feGaussianBlur stdDeviation="50" />
@@ -347,8 +347,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter3_d_138_42419" x="844.5" y="72" width="282" height="282" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter3_d_138_42419" x="844.5" y="72" width="282" height="282" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="33" dy="59" />
         <feGaussianBlur stdDeviation="50" />
@@ -356,8 +356,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter4_d_138_42419" x="1082" y="170" width="340" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter4_d_138_42419" x="1082" y="170" width="340" height="340" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="33" dy="59" />
         <feGaussianBlur stdDeviation="50" />
@@ -365,8 +365,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter5_d_138_42419" x="179.5" y="63" width="315" height="315" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter5_d_138_42419" x="179.5" y="63" width="315" height="315" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="33" dy="59" />
         <feGaussianBlur stdDeviation="50" />
@@ -374,8 +374,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter6_d_138_42419" x="568" y="81.5" width="315" height="315" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter6_d_138_42419" x="568" y="81.5" width="315" height="315" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="33" dy="59" />
         <feGaussianBlur stdDeviation="50" />
@@ -383,18 +383,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter7_d_138_42419" x="982" y="486" width="304" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-        <feMorphology radius="12" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_138_42419" />
-        <feOffset dx="33" dy="59" />
-        <feGaussianBlur stdDeviation="50" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0.191202 0 0 0 0 0.347754 0 0 0 0 0.829152 0 0 0 0.12 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
-      </filter>
-      <filter id="filter8_d_138_42419" x="-1" y="202" width="340" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter7_d_138_42419" x="982" y="486" width="304" height="304" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feMorphology radius="12" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_138_42419" />
         <feOffset dx="33" dy="59" />
@@ -403,8 +393,18 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter9_d_138_42419" x="444" y="492" width="306" height="306" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter8_d_138_42419" x="-1" y="202" width="340" height="340" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feMorphology radius="12" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_138_42419" />
+        <feOffset dx="33" dy="59" />
+        <feGaussianBlur stdDeviation="50" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.191202 0 0 0 0 0.347754 0 0 0 0 0.829152 0 0 0 0.12 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
+      </filter>
+      <filter id="filter9_d_138_42419" x="444" y="492" width="306" height="306" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feMorphology radius="13" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_138_42419" />
         <feOffset dx="33" dy="59" />
@@ -413,8 +413,8 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_138_42419" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
-      <filter id="filter10_d_138_42419" x="109" y="424" width="304" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter10_d_138_42419" x="109" y="424" width="304" height="304" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feMorphology radius="12" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_138_42419" />
         <feOffset dx="33" dy="59" />
@@ -424,33 +424,33 @@ export const GalaxyImg = () => (
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_138_42419" result="shape" />
       </filter>
       <linearGradient id="paint0_linear_138_42419" x1="627.21" y1="605.903" x2="591.589" y2="315.799" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint1_linear_138_42419" x1="609.099" y1="615.028" x2="562.236" y2="233.37" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint2_linear_138_42419" x1="585.384" y1="626.956" x2="523.951" y2="125.552" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint3_linear_138_42419" x1="562.798" y1="638.768" x2="486.681" y2="18.8502" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint4_linear_138_42419" x1="489.895" y1="676.913" x2="366.642" y2="-325.799" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint5_linear_138_42419" x1="593.196" y1="372.393" x2="808.2" y2="417.371" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9A93FF" />
-        <stop offset="1" stop-color="#6042E0" />
+        <stop stopColor="#9A93FF" />
+        <stop offset="1" stopColor="#6042E0" />
       </linearGradient>
       <clipPath id="clip0_138_42419">
         <rect width="1371" height="725" fill="white" />
@@ -463,11 +463,11 @@ export const GalaxyImg = () => (
 );
 export const GalaxyImgMobile = () => (
   <svg width="448" height="532" viewBox="0 0 448 532" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path opacity="0.9" d="M298 279.5C298 318.417 265.784 350 226 350C186.216 350 154 318.417 154 279.5C154 240.583 186.216 209 226 209C265.784 209 298 240.583 298 279.5Z" stroke="url(#paint0_linear_110_16231)" stroke-opacity="0.4" strokeWidth="2" />
-    <path opacity="0.8" d="M318 281C318 331.243 276.602 372 225.5 372C174.398 372 133 331.243 133 281C133 230.757 174.398 190 225.5 190C276.602 190 318 230.757 318 281Z" stroke="url(#paint1_linear_110_16231)" stroke-opacity="0.4" strokeWidth="2" />
-    <path opacity="0.6" d="M349 281.5C349 348.595 294.163 403 226.5 403C158.837 403 104 348.595 104 281.5C104 214.405 158.837 160 226.5 160C294.163 160 349 214.405 349 281.5Z" stroke="url(#paint2_linear_110_16231)" stroke-opacity="0.4" strokeWidth="2" />
-    <path opacity="0.4" d="M377 281C377 363.278 309.408 430 226 430C142.592 430 75 363.278 75 281C75 198.722 142.592 132 226 132C309.408 132 377 198.722 377 281Z" stroke="url(#paint3_linear_110_16231)" stroke-opacity="0.4" strokeWidth="2" />
-    <path opacity="0.2" d="M424 280.5C424 389.014 335.138 477 225.5 477C115.862 477 27 389.014 27 280.5C27 171.986 115.862 84 225.5 84C335.138 84 424 171.986 424 280.5Z" stroke="url(#paint4_linear_110_16231)" stroke-opacity="0.6" strokeWidth="2" />
+    <path opacity="0.9" d="M298 279.5C298 318.417 265.784 350 226 350C186.216 350 154 318.417 154 279.5C154 240.583 186.216 209 226 209C265.784 209 298 240.583 298 279.5Z" stroke="url(#paint0_linear_110_16231)" strokeOpacity="0.4" strokeWidth="2" />
+    <path opacity="0.8" d="M318 281C318 331.243 276.602 372 225.5 372C174.398 372 133 331.243 133 281C133 230.757 174.398 190 225.5 190C276.602 190 318 230.757 318 281Z" stroke="url(#paint1_linear_110_16231)" strokeOpacity="0.4" strokeWidth="2" />
+    <path opacity="0.6" d="M349 281.5C349 348.595 294.163 403 226.5 403C158.837 403 104 348.595 104 281.5C104 214.405 158.837 160 226.5 160C294.163 160 349 214.405 349 281.5Z" stroke="url(#paint2_linear_110_16231)" strokeOpacity="0.4" strokeWidth="2" />
+    <path opacity="0.4" d="M377 281C377 363.278 309.408 430 226 430C142.592 430 75 363.278 75 281C75 198.722 142.592 132 226 132C309.408 132 377 198.722 377 281Z" stroke="url(#paint3_linear_110_16231)" strokeOpacity="0.4" strokeWidth="2" />
+    <path opacity="0.2" d="M424 280.5C424 389.014 335.138 477 225.5 477C115.862 477 27 389.014 27 280.5C27 171.986 115.862 84 225.5 84C335.138 84 424 171.986 424 280.5Z" stroke="url(#paint4_linear_110_16231)" strokeOpacity="0.6" strokeWidth="2" />
     <g filter="url(#filter0_d_110_16231)">
       <rect x="179.051" y="233.832" width="93.3807" height="93.8288" rx="46.6903" fill="url(#paint5_linear_110_16231)" />
     </g>
@@ -542,8 +542,8 @@ export const GalaxyImgMobile = () => (
       />
     </g>
     <defs>
-      <filter id="filter0_d_110_16231" x="135.051" y="211.832" width="193.381" height="193.828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter0_d_110_16231" x="135.051" y="211.832" width="193.381" height="193.828" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="6" dy="28" />
         <feGaussianBlur stdDeviation="25" />
@@ -551,8 +551,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter1_d_110_16231" x="254" y="316" width="103" height="102" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter1_d_110_16231" x="254" y="316" width="103" height="102" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="5" dy="8" />
         <feGaussianBlur stdDeviation="10" />
@@ -560,8 +560,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter2_d_110_16231" x="291" y="183" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter2_d_110_16231" x="291" y="183" width="88" height="88" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="3" dy="5" />
         <feGaussianBlur stdDeviation="5" />
@@ -569,8 +569,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter3_d_110_16231" x="40" y="265" width="102" height="102" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter3_d_110_16231" x="40" y="265" width="102" height="102" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="15" dy="12" />
         <feGaussianBlur stdDeviation="10" />
@@ -578,8 +578,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter4_d_110_16231" x="301" y="390" width="142" height="142" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter4_d_110_16231" x="301" y="390" width="142" height="142" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="6" dy="8" />
         <feGaussianBlur stdDeviation="15" />
@@ -587,8 +587,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter5_d_110_16231" x="330" y="29" width="118" height="118" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter5_d_110_16231" x="330" y="29" width="118" height="118" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="5" dy="8" />
         <feGaussianBlur stdDeviation="15" />
@@ -596,8 +596,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter6_d_110_16231" x="71" y="355" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter6_d_110_16231" x="71" y="355" width="152" height="152" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="6" dy="9" />
         <feGaussianBlur stdDeviation="10" />
@@ -605,8 +605,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter7_d_110_16231" x="181" y="42" width="151" height="151" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter7_d_110_16231" x="181" y="42" width="151" height="151" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="7" dy="9" />
         <feGaussianBlur stdDeviation="20" />
@@ -614,8 +614,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter8_d_110_16231" x="110" y="156" width="100" height="99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter8_d_110_16231" x="110" y="156" width="100" height="99" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="7" dy="8" />
         <feGaussianBlur stdDeviation="5.5" />
@@ -623,8 +623,8 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_110_16231" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
-      <filter id="filter9_d_110_16231" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter9_d_110_16231" x="0" y="0" width="214" height="214" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="13" dy="9" />
         <feGaussianBlur stdDeviation="30" />
@@ -633,33 +633,33 @@ export const GalaxyImgMobile = () => (
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_110_16231" result="shape" />
       </filter>
       <linearGradient id="paint0_linear_110_16231" x1="195.468" y1="366.496" x2="176.753" y2="210.879" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint1_linear_110_16231" x1="186.394" y1="392.939" x2="162.205" y2="192.731" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint2_linear_110_16231" x1="174.846" y1="430.549" x2="142.386" y2="164.03" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint3_linear_110_16231" x1="162.426" y1="463.51" x2="122.876" y2="137.11" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint4_linear_110_16231" x1="142.059" y1="520.804" x2="89.824" y2="91.0846" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2D8BFF" stop-opacity="0" />
-        <stop offset="0.519043" stop-color="#6480FD" stop-opacity="0.31" />
-        <stop offset="1" stop-color="#9F74FB" stop-opacity="0" />
+        <stop stopColor="#2D8BFF" stopOpacity="0" />
+        <stop offset="0.519043" stopColor="#6480FD" stopOpacity="0.31" />
+        <stop offset="1" stopColor="#9F74FB" stopOpacity="0" />
       </linearGradient>
       <linearGradient id="paint5_linear_110_16231" x1="177.43" y1="243.088" x2="292.336" y2="267.415" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9A93FF" />
-        <stop offset="1" stop-color="#6042E0" />
+        <stop stopColor="#9A93FF" />
+        <stop offset="1" stopColor="#6042E0" />
       </linearGradient>
       <clipPath id="clip0_110_16231">
         <rect width="10.5" height="25.4119" fill="white" transform="translate(211 259.184)" />
@@ -672,9 +672,9 @@ export const AvailabilityCalenderIcon = () => (
     <path
       d="M21.75 5.685C21.7488 4.7465 21.3755 3.84678 20.7118 3.18316C20.0482 2.51954 19.1485 2.14619 18.21 2.145H17.571V1.5C17.571 1.30109 17.492 1.11032 17.3513 0.96967C17.2107 0.829018 17.0199 0.75 16.821 0.75C16.6221 0.75 16.4313 0.829018 16.2907 0.96967C16.15 1.11032 16.071 1.30109 16.071 1.5V2.145H6.429V1.5C6.429 1.30109 6.34998 1.11032 6.20933 0.96967C6.06868 0.829018 5.87791 0.75 5.679 0.75C5.48009 0.75 5.28932 0.829018 5.14867 0.96967C5.00802 1.11032 4.929 1.30109 4.929 1.5V2.145H4.29C3.3515 2.14619 2.45178 2.51954 1.78816 3.18316C1.12454 3.84678 0.751191 4.7465 0.75 5.685V18.21C0.751191 19.1485 1.12454 20.0482 1.78816 20.7118C2.45178 21.3755 3.3515 21.7488 4.29 21.75H12.3105C13.4946 22.7139 14.9731 23.2433 16.5 23.25C18.2896 23.248 20.0053 22.5362 21.2708 21.2708C22.5362 20.0053 23.248 18.2896 23.25 16.5C23.2433 14.9731 22.7139 13.4946 21.75 12.3105V5.685ZM4.29 3.645H4.929V4.2855C4.929 4.48441 5.00802 4.67518 5.14867 4.81583C5.28932 4.95648 5.48009 5.0355 5.679 5.0355C5.87791 5.0355 6.06868 4.95648 6.20933 4.81583C6.34998 4.67518 6.429 4.48441 6.429 4.2855V3.645H16.071V4.2855C16.071 4.48441 16.15 4.67518 16.2907 4.81583C16.4313 4.95648 16.6221 5.0355 16.821 5.0355C17.0199 5.0355 17.2107 4.95648 17.3513 4.81583C17.492 4.67518 17.571 4.48441 17.571 4.2855V3.645H18.21C18.7508 3.64579 19.2692 3.86098 19.6516 4.24338C20.034 4.62578 20.2492 5.1442 20.25 5.685V6.321H2.25V5.685C2.25079 5.1442 2.46598 4.62578 2.84838 4.24338C3.23078 3.86098 3.7492 3.64579 4.29 3.645ZM2.25 18.21V7.821H20.25V10.893C18.9525 10.0232 17.3934 9.63081 15.8388 9.78273C14.2842 9.93466 12.8305 10.6215 11.726 11.726C10.6215 12.8305 9.93466 14.2842 9.78273 15.8388C9.63081 17.3934 10.0232 18.9525 10.893 20.25H4.29C3.7492 20.2492 3.23078 20.034 2.84838 19.6516C2.46598 19.2692 2.25079 18.7508 2.25 18.21ZM16.5 21.75C15.4616 21.75 14.4466 21.4421 13.5833 20.8652C12.7199 20.2883 12.047 19.4684 11.6496 18.5091C11.2523 17.5498 11.1483 16.4942 11.3509 15.4758C11.5534 14.4574 12.0535 13.5219 12.7877 12.7877C13.5219 12.0535 14.4574 11.5534 15.4758 11.3509C16.4942 11.1483 17.5498 11.2523 18.5091 11.6496C19.4684 12.047 20.2883 12.7199 20.8652 13.5833C21.4421 14.4466 21.75 15.4616 21.75 16.5C21.7484 17.8919 21.1948 19.2263 20.2106 20.2106C19.2263 21.1948 17.8919 21.7484 16.5 21.75Z"
       fill="white"
-      fill-opacity="0.48"
+      fillOpacity="0.48"
     />
-    <path d="M17.25 16.1895V13.5C17.25 13.3011 17.171 13.1103 17.0303 12.9697C16.8897 12.829 16.6989 12.75 16.5 12.75C16.3011 12.75 16.1103 12.829 15.9697 12.9697C15.829 13.1103 15.75 13.3011 15.75 13.5V16.5C15.75 16.6985 15.8288 16.8889 15.969 17.0295L17.469 18.5295C17.6113 18.6607 17.7988 18.7317 17.9923 18.7279C18.1858 18.724 18.3703 18.6455 18.5073 18.5087C18.6442 18.372 18.723 18.1876 18.7271 17.9941C18.7313 17.8006 18.6605 17.613 18.5295 17.4705L17.25 16.1895Z" fill="white" fill-opacity="0.48" />
+    <path d="M17.25 16.1895V13.5C17.25 13.3011 17.171 13.1103 17.0303 12.9697C16.8897 12.829 16.6989 12.75 16.5 12.75C16.3011 12.75 16.1103 12.829 15.9697 12.9697C15.829 13.1103 15.75 13.3011 15.75 13.5V16.5C15.75 16.6985 15.8288 16.8889 15.969 17.0295L17.469 18.5295C17.6113 18.6607 17.7988 18.7317 17.9923 18.7279C18.1858 18.724 18.3703 18.6455 18.5073 18.5087C18.6442 18.372 18.723 18.1876 18.7271 17.9941C18.7313 17.8006 18.6605 17.613 18.5295 17.4705L17.25 16.1895Z" fill="white" fillOpacity="0.48" />
   </svg>
 );
 export const AvailabilityCalenderActiveIcon = () => (
@@ -731,20 +731,20 @@ export const BookingIconActive = () => (
 );
 export const OnboardingIcon = () => (
   <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12.2557 5.2663L11.0339 4.04446C9.64128 2.65185 7.38346 2.65185 5.99085 4.04446L1.74758 8.3308C0.354973 9.72341 0.354973 11.9812 1.74758 13.3738L2.82613 14.4523M10.1205 7.46052L2.88257 14.6839C2.28018 15.2862 2.28018 16.2628 2.88257 16.8652C3.48491 17.4675 4.46155 17.4675 5.06394 16.8652L10.5694 11.3597M15.4091 15.2455L11.8849 18.7698C11.2825 19.3722 11.2825 20.3488 11.8849 20.9511C12.4873 21.5535 13.4638 21.5535 14.0662 20.9511L22.2525 12.7649C23.6451 11.3723 23.6451 9.11446 22.2525 7.72189L18.5808 4.05022C17.1882 2.65761 14.9303 2.65761 13.5378 4.05022L12.4343 5.15146" stroke="white" stroke-opacity="0.58" strokeWidth="1.40625" stroke-miterlimit="10" />
-    <path d="M13.0104 13.2812L7.86973 18.422C7.26738 19.0243 7.26738 20.001 7.86973 20.6034C8.47212 21.2057 9.44871 21.2057 10.0511 20.6034L15.5111 15.1434" stroke="white" stroke-opacity="0.58" strokeWidth="1.40625" stroke-miterlimit="10" />
-    <path d="M10.6018 11.3269L5.37754 16.5512C4.7752 17.1535 4.7752 18.1302 5.37754 18.7326C5.97988 19.3349 6.95652 19.3349 7.55887 18.7326L13.0274 13.2641M9.62502 6.96372L13.0334 10.3991C13.6357 11.0014 14.6124 11.0014 15.2148 10.3991C15.8171 9.79675 15.8171 8.82011 15.2148 8.21772L11.3017 4.30469" stroke="white" stroke-opacity="0.58" strokeWidth="1.40625" stroke-miterlimit="10" />
+    <path d="M12.2557 5.2663L11.0339 4.04446C9.64128 2.65185 7.38346 2.65185 5.99085 4.04446L1.74758 8.3308C0.354973 9.72341 0.354973 11.9812 1.74758 13.3738L2.82613 14.4523M10.1205 7.46052L2.88257 14.6839C2.28018 15.2862 2.28018 16.2628 2.88257 16.8652C3.48491 17.4675 4.46155 17.4675 5.06394 16.8652L10.5694 11.3597M15.4091 15.2455L11.8849 18.7698C11.2825 19.3722 11.2825 20.3488 11.8849 20.9511C12.4873 21.5535 13.4638 21.5535 14.0662 20.9511L22.2525 12.7649C23.6451 11.3723 23.6451 9.11446 22.2525 7.72189L18.5808 4.05022C17.1882 2.65761 14.9303 2.65761 13.5378 4.05022L12.4343 5.15146" stroke="white" strokeOpacity="0.58" strokeWidth="1.40625" strokeMiterlimit="10" />
+    <path d="M13.0104 13.2812L7.86973 18.422C7.26738 19.0243 7.26738 20.001 7.86973 20.6034C8.47212 21.2057 9.44871 21.2057 10.0511 20.6034L15.5111 15.1434" stroke="white" strokeOpacity="0.58" strokeWidth="1.40625" strokeMiterlimit="10" />
+    <path d="M10.6018 11.3269L5.37754 16.5512C4.7752 17.1535 4.7752 18.1302 5.37754 18.7326C5.97988 19.3349 6.95652 19.3349 7.55887 18.7326L13.0274 13.2641M9.62502 6.96372L13.0334 10.3991C13.6357 11.0014 14.6124 11.0014 15.2148 10.3991C15.8171 9.79675 15.8171 8.82011 15.2148 8.21772L11.3017 4.30469" stroke="white" strokeOpacity="0.58" strokeWidth="1.40625" strokeMiterlimit="10" />
   </svg>
 );
 export const OnboardingIconActive = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M15 11.0909L12.5 10.5455L12 10L13 13.2727L16 16L15 11.0909Z" fill="white" />
     <path d="M12.2557 5.06708L11.0339 3.84524C9.64128 2.45263 7.38346 2.45263 5.99085 3.84524L1.74758 8.13158C0.354973 9.52419 0.354973 11.782 1.74758 13.1746L2.82613 14.2531M10.1205 7.2613L2.88257 14.4846C2.28018 15.087 2.28018 16.0636 2.88257 16.666C3.48491 17.2683 4.46155 17.2683 5.06394 16.666L11.5 10M15.4091 15.0463L11.8849 18.5706C11.2825 19.1729 11.2825 20.1496 11.8849 20.7519C12.4873 21.3543 13.4638 21.3543 14.0662 20.7519L22.2525 12.5657C23.6451 11.1731 23.6451 8.91524 22.2525 7.52268L18.5808 3.851C17.1882 2.45839 14.9303 2.45839 13.5378 3.851L12.4343 4.95224" fill="white" />
-    <path d="M12.2557 5.06708L11.0339 3.84524C9.64128 2.45263 7.38346 2.45263 5.99085 3.84524L1.74758 8.13158C0.354973 9.52419 0.354973 11.782 1.74758 13.1746L2.82613 14.2531M10.1205 7.2613L2.88257 14.4846C2.28018 15.087 2.28018 16.0636 2.88257 16.666C3.48491 17.2683 4.46155 17.2683 5.06394 16.666L11.5 10M15.4091 15.0463L11.8849 18.5706C11.2825 19.1729 11.2825 20.1496 11.8849 20.7519C12.4873 21.3543 13.4638 21.3543 14.0662 20.7519L22.2525 12.5657C23.6451 11.1731 23.6451 8.91524 22.2525 7.52268L18.5808 3.851C17.1882 2.45839 14.9303 2.45839 13.5378 3.851L12.4343 4.95224" stroke="#7D63EC" strokeWidth="1.40625" stroke-miterlimit="10" />
+    <path d="M12.2557 5.06708L11.0339 3.84524C9.64128 2.45263 7.38346 2.45263 5.99085 3.84524L1.74758 8.13158C0.354973 9.52419 0.354973 11.782 1.74758 13.1746L2.82613 14.2531M10.1205 7.2613L2.88257 14.4846C2.28018 15.087 2.28018 16.0636 2.88257 16.666C3.48491 17.2683 4.46155 17.2683 5.06394 16.666L11.5 10M15.4091 15.0463L11.8849 18.5706C11.2825 19.1729 11.2825 20.1496 11.8849 20.7519C12.4873 21.3543 13.4638 21.3543 14.0662 20.7519L22.2525 12.5657C23.6451 11.1731 23.6451 8.91524 22.2525 7.52268L18.5808 3.851C17.1882 2.45839 14.9303 2.45839 13.5378 3.851L12.4343 4.95224" stroke="#7D63EC" strokeWidth="1.40625" strokeMiterlimit="10" />
     <path d="M13.0104 13.082L7.86973 18.2228C7.26738 18.8251 7.26738 19.8017 7.86973 20.4041C8.47212 21.0065 9.44871 21.0065 10.0511 20.4041L15.5111 14.9441" fill="white" />
-    <path d="M13.0104 13.082L7.86973 18.2228C7.26738 18.8251 7.26738 19.8017 7.86973 20.4041C8.47212 21.0065 9.44871 21.0065 10.0511 20.4041L15.5111 14.9441" stroke="#7D63EC" strokeWidth="1.40625" stroke-miterlimit="10" />
+    <path d="M13.0104 13.082L7.86973 18.2228C7.26738 18.8251 7.26738 19.8017 7.86973 20.4041C8.47212 21.0065 9.44871 21.0065 10.0511 20.4041L15.5111 14.9441" stroke="#7D63EC" strokeWidth="1.40625" strokeMiterlimit="10" />
     <path d="M12 9.5L5.37754 16.352C4.7752 16.9543 4.7752 17.931 5.37754 18.5334C5.97988 19.1357 6.95652 19.1357 7.55887 18.5334L13 13M9.62502 6.7645L13.0334 10.1999C13.6357 10.8022 14.6124 10.8022 15.2148 10.1999C15.8171 9.59753 15.8171 8.62089 15.2148 8.0185L11.3017 4.10547" fill="white" />
-    <path d="M12 9.5L5.37754 16.352C4.7752 16.9543 4.7752 17.931 5.37754 18.5334C5.97988 19.1357 6.95652 19.1357 7.55887 18.5334L13 13M9.62502 6.7645L13.0334 10.1999C13.6357 10.8022 14.6124 10.8022 15.2148 10.1999C15.8171 9.59753 15.8171 8.62089 15.2148 8.0185L11.3017 4.10547" stroke="#7D63EC" strokeWidth="1.40625" stroke-miterlimit="10" />
+    <path d="M12 9.5L5.37754 16.352C4.7752 16.9543 4.7752 17.931 5.37754 18.5334C5.97988 19.1357 6.95652 19.1357 7.55887 18.5334L13 13M9.62502 6.7645L13.0334 10.1999C13.6357 10.8022 14.6124 10.8022 15.2148 10.1999C15.8171 9.59753 15.8171 8.62089 15.2148 8.0185L11.3017 4.10547" stroke="#7D63EC" strokeWidth="1.40625" strokeMiterlimit="10" />
   </svg>
 );
 export const SettingIcon = () => (
@@ -752,9 +752,9 @@ export const SettingIcon = () => (
     <path
       d="M22.7715 10.0822L21.087 9.79641C20.9115 9.22988 20.6859 8.6834 20.4102 8.16199L21.4028 6.77324C21.824 6.18164 21.7588 5.37446 21.2424 4.86308L19.7484 3.36904C19.4676 3.08828 19.0966 2.93286 18.7005 2.93286C18.3897 2.93286 18.0939 3.02812 17.8432 3.20861L16.4495 4.20129C15.908 3.91552 15.3415 3.67988 14.7549 3.50441L14.4741 1.83991C14.4166 1.49343 14.2378 1.17867 13.9696 0.951841C13.7014 0.725008 13.3614 0.600862 13.0102 0.601565H10.8995C10.1725 0.601565 9.55582 1.12297 9.4355 1.83991L9.14471 3.54452C8.5832 3.71999 8.03672 3.95062 7.51531 4.23137L6.13658 3.23869C5.88591 3.0582 5.58509 2.96295 5.27425 2.96295C4.87818 2.96295 4.50217 3.11837 4.22642 3.39912L2.72737 4.89316C2.21599 5.40454 2.1458 6.21173 2.56694 6.80332L3.56965 8.21213C3.2939 8.73855 3.07331 9.28503 2.90285 9.85156L1.23835 10.1323C0.891866 10.1899 0.577112 10.3687 0.350278 10.6368C0.123445 10.905 -0.000700839 11.245 2.9762e-06 11.5963V13.707C2.9762e-06 14.4339 0.521412 15.0506 1.23835 15.1709L2.94296 15.4617C3.11843 16.0232 3.34905 16.5697 3.62981 17.0911L2.64214 18.4648C2.221 19.0564 2.28618 19.8636 2.80258 20.375L4.29661 21.869C4.57737 22.1498 4.94837 22.3052 5.34444 22.3052C5.65528 22.3052 5.95108 22.21 6.20176 22.0295L7.61057 21.0268C8.11694 21.2925 8.64837 21.5081 9.19485 21.6785L9.47561 23.3631C9.53315 23.7096 9.71197 24.0243 9.98013 24.2511C10.2483 24.478 10.5883 24.6021 10.9396 24.6014H13.0553C13.7822 24.6014 14.3989 24.08 14.5192 23.3631L14.805 21.6785C15.3715 21.503 15.918 21.2774 16.4394 21.0017L17.8282 21.9944C18.0789 22.1749 18.3797 22.2701 18.6905 22.2701C19.0866 22.2701 19.4576 22.1147 19.7383 21.8339L21.2324 20.3399C21.7438 19.8285 21.8139 19.0213 21.3928 18.4297L20.4001 17.036C20.6759 16.5096 20.9065 15.9631 21.077 15.4016L22.7615 15.1208C23.108 15.0633 23.4227 14.8844 23.6496 14.6163C23.8764 14.3481 24.0006 14.0081 23.9999 13.6568V11.5461C24.0099 10.8192 23.4885 10.2025 22.7715 10.0822ZM22.6562 13.6568C22.6562 13.722 22.6111 13.7772 22.5459 13.7872L20.4402 14.1381C20.1745 14.1833 19.9639 14.3788 19.8988 14.6345C19.7083 15.3715 19.4175 16.0784 19.0264 16.7352C18.891 16.9658 18.9011 17.2516 19.0565 17.4722L20.2948 19.2169C20.3299 19.267 20.3249 19.3422 20.2798 19.3873L18.7858 20.8814C18.7507 20.9165 18.7156 20.9215 18.6905 20.9215C18.6604 20.9215 18.6354 20.9114 18.6153 20.8964L16.8756 19.6581C16.66 19.5026 16.3692 19.4926 16.1386 19.628C15.4818 20.019 14.7749 20.3098 14.0379 20.5003C13.7772 20.5655 13.5817 20.7811 13.5416 21.0418L13.1856 23.1475C13.1756 23.2127 13.1205 23.2578 13.0553 23.2578H10.9446C10.8794 23.2578 10.8243 23.2127 10.8142 23.1475L10.4633 21.0418C10.4182 20.7761 10.2226 20.5655 9.96694 20.5003C9.25 20.3148 8.55813 20.0291 7.91138 19.6581C7.8061 19.5979 7.68577 19.5678 7.57046 19.5678C7.43509 19.5678 7.29471 19.6079 7.1794 19.6932L5.42466 20.9415C5.39959 20.9566 5.37453 20.9666 5.34946 20.9666C5.3294 20.9666 5.2893 20.9616 5.2542 20.9265L3.76016 19.4324C3.71504 19.3873 3.71003 19.3171 3.74512 19.262L4.97846 17.5323C5.13388 17.3117 5.1439 17.0209 5.00854 16.7903C4.61748 16.1385 4.31667 15.4316 4.12615 14.6946C4.05596 14.439 3.84539 14.2434 3.58469 14.1983L1.46396 13.8373C1.39878 13.8273 1.35366 13.7722 1.35366 13.707V11.5963C1.35366 11.5311 1.39878 11.476 1.46396 11.4659L3.55461 11.115C3.82033 11.0699 4.03591 10.8743 4.10108 10.6136C4.28659 9.87663 4.57236 9.1647 4.9584 8.50793C5.09377 8.27731 5.07873 7.99153 4.92331 7.77595L3.67493 6.02121C3.63984 5.97107 3.64485 5.89587 3.68997 5.85075L5.18401 4.35671C5.21911 4.32162 5.2542 4.3166 5.27927 4.3166C5.30935 4.3166 5.33442 4.32663 5.35447 4.34167L7.08415 5.575C7.30474 5.73042 7.59553 5.74045 7.82615 5.60509C8.47791 5.21403 9.18482 4.91322 9.92181 4.7227C10.1775 4.65251 10.373 4.44194 10.4182 4.18124L10.7791 2.06051C10.7892 1.99533 10.8443 1.95021 10.9095 1.95021H13.0202C13.0854 1.95021 13.1405 1.99533 13.1505 2.06051L13.5015 4.15116C13.5466 4.41688 13.7421 4.63246 14.0028 4.69763C14.7599 4.88815 15.4818 5.18395 16.1537 5.58002C16.3843 5.71538 16.67 5.70536 16.8906 5.54994L18.6203 4.30658C18.6454 4.29154 18.6705 4.28151 18.6955 4.28151C18.7156 4.28151 18.7557 4.28652 18.7908 4.32162L20.2848 5.81565C20.3299 5.86078 20.3349 5.93097 20.2999 5.98612L19.0615 7.72582C18.9061 7.9414 18.8961 8.23218 19.0314 8.46281C19.4225 9.11958 19.7133 9.82649 19.9038 10.5635C19.969 10.8242 20.1845 11.0197 20.4452 11.0598L22.5509 11.4158C22.6161 11.4258 22.6612 11.481 22.6612 11.5461V13.6568H22.6562Z"
       fill="white"
-      fill-opacity="0.58"
+      fillOpacity="0.58"
     />
-    <path d="M12.0032 7.42188C9.14549 7.42188 6.82422 9.74315 6.82422 12.6009C6.82422 15.4586 9.14549 17.7799 12.0032 17.7799C14.8609 17.7799 17.1822 15.4586 17.1822 12.6009C17.1822 9.74315 14.8609 7.42188 12.0032 7.42188ZM12.0032 16.4262C9.89251 16.4262 8.17788 14.7116 8.17788 12.6009C8.17788 10.4902 9.89251 8.77553 12.0032 8.77553C14.1139 8.77553 15.8285 10.4902 15.8285 12.6009C15.8285 14.7116 14.1139 16.4262 12.0032 16.4262Z" fill="white" fill-opacity="0.58" />
+    <path d="M12.0032 7.42188C9.14549 7.42188 6.82422 9.74315 6.82422 12.6009C6.82422 15.4586 9.14549 17.7799 12.0032 17.7799C14.8609 17.7799 17.1822 15.4586 17.1822 12.6009C17.1822 9.74315 14.8609 7.42188 12.0032 7.42188ZM12.0032 16.4262C9.89251 16.4262 8.17788 14.7116 8.17788 12.6009C8.17788 10.4902 9.89251 8.77553 12.0032 8.77553C14.1139 8.77553 15.8285 10.4902 15.8285 12.6009C15.8285 14.7116 14.1139 16.4262 12.0032 16.4262Z" fill="white" fillOpacity="0.58" />
   </svg>
 );
 export const SettingIconActive = () => (
@@ -784,8 +784,8 @@ export const SettingIconActive = () => (
 export const SecurityIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clipPath="url(#clip0_818_36315)">
-      <path d="M22.0586 6.17957C22.0463 5.53161 22.0345 4.91948 22.0345 4.32729C22.0345 4.1045 21.946 3.89082 21.7885 3.73328C21.631 3.57574 21.4173 3.48723 21.1945 3.48723C17.6018 3.48723 14.8665 2.45474 12.5864 0.237875C12.4296 0.085343 12.2195 0 12.0008 0C11.7821 0 11.5719 0.085343 11.4152 0.237875C9.13535 2.45474 6.40044 3.48723 2.80801 3.48723C2.58521 3.48723 2.37153 3.57574 2.21399 3.73328C2.05645 3.89082 1.96794 4.1045 1.96794 4.32729C1.96794 4.91959 1.9563 5.53194 1.94386 6.18002C1.82872 12.2101 1.67101 20.4686 11.7257 23.9537C11.9038 24.0155 12.0976 24.0155 12.2758 23.9537C22.3313 20.4685 22.1738 12.2098 22.0586 6.17957ZM12.0009 22.2685C3.37768 19.136 3.50806 12.2738 3.62376 6.21206C3.63071 5.84825 3.63743 5.49565 3.64213 5.14999C7.00686 5.00797 9.69752 3.98836 12.0009 1.98184C14.3044 3.98836 16.9955 5.00808 20.3605 5.14999C20.3652 5.49554 20.3719 5.84792 20.3788 6.2115C20.4944 12.2735 20.6247 19.1359 12.0009 22.2685Z" fill="white" fill-opacity="0.58" />
-      <path d="M14.8925 9.0819L10.8379 13.1363L9.1077 11.4061C8.94926 11.2529 8.73699 11.1681 8.51663 11.17C8.29627 11.1719 8.08546 11.2602 7.92965 11.4161C7.77383 11.5719 7.68548 11.7827 7.68362 12.0031C7.68177 12.2234 7.76657 12.4357 7.91974 12.5941L10.2439 14.9183C10.3218 14.9964 10.4144 15.0583 10.5164 15.1006C10.6183 15.1428 10.7276 15.1644 10.8379 15.1643C10.9482 15.1644 11.0575 15.1428 11.1594 15.1006C11.2614 15.0583 11.3539 14.9964 11.4319 14.9183L16.0803 10.27C16.1584 10.192 16.2203 10.0994 16.2625 9.99748C16.3047 9.89557 16.3265 9.78633 16.3265 9.67601C16.3265 9.56569 16.3048 9.45645 16.2626 9.35453C16.2203 9.25261 16.1585 9.16001 16.0804 9.08201C15.9229 8.92447 15.7093 8.83596 15.4865 8.83594C15.2637 8.83592 15.05 8.92439 14.8925 9.0819Z" fill="white" fill-opacity="0.58" />
+      <path d="M22.0586 6.17957C22.0463 5.53161 22.0345 4.91948 22.0345 4.32729C22.0345 4.1045 21.946 3.89082 21.7885 3.73328C21.631 3.57574 21.4173 3.48723 21.1945 3.48723C17.6018 3.48723 14.8665 2.45474 12.5864 0.237875C12.4296 0.085343 12.2195 0 12.0008 0C11.7821 0 11.5719 0.085343 11.4152 0.237875C9.13535 2.45474 6.40044 3.48723 2.80801 3.48723C2.58521 3.48723 2.37153 3.57574 2.21399 3.73328C2.05645 3.89082 1.96794 4.1045 1.96794 4.32729C1.96794 4.91959 1.9563 5.53194 1.94386 6.18002C1.82872 12.2101 1.67101 20.4686 11.7257 23.9537C11.9038 24.0155 12.0976 24.0155 12.2758 23.9537C22.3313 20.4685 22.1738 12.2098 22.0586 6.17957ZM12.0009 22.2685C3.37768 19.136 3.50806 12.2738 3.62376 6.21206C3.63071 5.84825 3.63743 5.49565 3.64213 5.14999C7.00686 5.00797 9.69752 3.98836 12.0009 1.98184C14.3044 3.98836 16.9955 5.00808 20.3605 5.14999C20.3652 5.49554 20.3719 5.84792 20.3788 6.2115C20.4944 12.2735 20.6247 19.1359 12.0009 22.2685Z" fill="white" fillOpacity="0.58" />
+      <path d="M14.8925 9.0819L10.8379 13.1363L9.1077 11.4061C8.94926 11.2529 8.73699 11.1681 8.51663 11.17C8.29627 11.1719 8.08546 11.2602 7.92965 11.4161C7.77383 11.5719 7.68548 11.7827 7.68362 12.0031C7.68177 12.2234 7.76657 12.4357 7.91974 12.5941L10.2439 14.9183C10.3218 14.9964 10.4144 15.0583 10.5164 15.1006C10.6183 15.1428 10.7276 15.1644 10.8379 15.1643C10.9482 15.1644 11.0575 15.1428 11.1594 15.1006C11.2614 15.0583 11.3539 14.9964 11.4319 14.9183L16.0803 10.27C16.1584 10.192 16.2203 10.0994 16.2625 9.99748C16.3047 9.89557 16.3265 9.78633 16.3265 9.67601C16.3265 9.56569 16.3048 9.45645 16.2626 9.35453C16.2203 9.25261 16.1585 9.16001 16.0804 9.08201C15.9229 8.92447 15.7093 8.83596 15.4865 8.83594C15.2637 8.83592 15.05 8.92439 14.8925 9.0819Z" fill="white" fillOpacity="0.58" />
     </g>
     <defs>
       <clipPath id="clip0_818_36315">
@@ -889,8 +889,8 @@ export const VenueManagementProblemsImg = () => (
       </g>
     </g>
     <defs>
-      <filter id="filter0_d_9_51629" x="469" y="96" width="267" height="269.816" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter0_d_9_51629" x="469" y="96" width="267" height="269.816" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="6" dy="28" />
         <feGaussianBlur stdDeviation="25" />
@@ -898,8 +898,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter1_d_9_51629" x="16.6661" y="170.662" width="113.648" height="41.0233" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter1_d_9_51629" x="16.6661" y="170.662" width="113.648" height="41.0233" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="3.66892" />
@@ -908,8 +908,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter2_d_9_51629" x="17.6039" y="174.6" width="111.773" height="39.1477" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter2_d_9_51629" x="17.6039" y="174.6" width="111.773" height="39.1477" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3" />
         <feGaussianBlur stdDeviation="3.2" />
@@ -918,8 +918,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter3_d_9_51629" x="75.5401" y="291.125" width="128.017" height="90.9666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter3_d_9_51629" x="75.5401" y="291.125" width="128.017" height="90.9666" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3.43638" />
         <feGaussianBlur stdDeviation="3.66548" />
@@ -928,8 +928,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter4_d_9_51629" x="1025.63" y="86.5805" width="113.368" height="63.9289" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter4_d_9_51629" x="1025.63" y="86.5805" width="113.368" height="63.9289" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3" />
         <feGaussianBlur stdDeviation="3.2" />
@@ -938,8 +938,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter5_d_9_51629" x="832.408" y="176.165" width="70.235" height="29.3092" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter5_d_9_51629" x="832.408" y="176.165" width="70.235" height="29.3092" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="2.63229" />
         <feGaussianBlur stdDeviation="2.80777" />
@@ -948,8 +948,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter6_d_9_51629" x="932.509" y="266.978" width="88.0846" height="60.1217" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter6_d_9_51629" x="932.509" y="266.978" width="88.0846" height="60.1217" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="2.63229" />
         <feGaussianBlur stdDeviation="2.80777" />
@@ -958,8 +958,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter7_d_9_51629" x="1095.03" y="215.296" width="86.9129" height="52.6219" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter7_d_9_51629" x="1095.03" y="215.296" width="86.9129" height="52.6219" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3.26863" />
         <feGaussianBlur stdDeviation="3.48654" />
@@ -968,8 +968,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter8_d_9_51629" x="158.616" y="117.662" width="92.9914" height="48.1086" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter8_d_9_51629" x="158.616" y="117.662" width="92.9914" height="48.1086" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3" />
         <feGaussianBlur stdDeviation="3.2" />
@@ -978,8 +978,8 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51629" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
-      <filter id="filter9_d_9_51629" x="367.37" y="185.948" width="69.0498" height="34.6123" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter9_d_9_51629" x="367.37" y="185.948" width="69.0498" height="34.6123" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3.57491" />
         <feGaussianBlur stdDeviation="3.81324" />
@@ -989,40 +989,40 @@ export const VenueManagementProblemsImg = () => (
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51629" result="shape" />
       </filter>
       <linearGradient id="paint0_linear_9_51629" x1="510.101" y1="134.752" x2="715.805" y2="177.786" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9A93FF" />
-        <stop offset="1" stop-color="#6042E0" />
+        <stop stopColor="#9A93FF" />
+        <stop offset="1" stopColor="#6042E0" />
       </linearGradient>
       <linearGradient id="paint1_linear_9_51629" x1="112.989" y1="176.493" x2="24.3764" y2="200.004" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient id="paint2_linear_9_51629" x1="183.88" y1="343.834" x2="82.5135" y2="370.105" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient id="paint3_linear_9_51629" x1="1119.7" y1="115.922" x2="1031.87" y2="138.99" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint4_linear_9_51629" x1="890.283" y1="182.406" x2="838.276" y2="196.757" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint5_linear_9_51629" x1="1013.24" y1="268.625" x2="945.312" y2="283.921" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint6_linear_9_51629" x1="1169" y1="217.351" x2="1104.18" y2="228.409" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint7_linear_9_51629" x1="239.531" y1="120.021" x2="170.536" y2="141.1" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient id="paint8_linear_9_51629" x1="423.477" y1="188.975" x2="374.594" y2="199.239" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <clipPath id="clip0_9_51629">
         <rect width="1200" height="413" fill="white" />
@@ -1101,8 +1101,8 @@ export const VenueManagementProblemsImgMobile = () => (
       </g>
     </g>
     <defs>
-      <filter id="filter0_d_9_51676" x="94.793" y="60.5859" width="189.207" height="190.711" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter0_d_9_51676" x="94.793" y="60.5859" width="189.207" height="190.711" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dx="6" dy="28" />
         <feGaussianBlur stdDeviation="25" />
@@ -1110,8 +1110,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter1_d_9_51676" x="-46.2867" y="135.1" width="77.4602" height="38.6906" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter1_d_9_51676" x="-46.2867" y="135.1" width="77.4602" height="38.6906" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3" />
         <feGaussianBlur stdDeviation="3.2" />
@@ -1120,8 +1120,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter2_d_9_51676" x="4.88598" y="159.192" width="80.9858" height="69.4546" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter2_d_9_51676" x="4.88598" y="159.192" width="80.9858" height="69.4546" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="2.91905" />
         <feGaussianBlur stdDeviation="3.11365" />
@@ -1130,8 +1130,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter3_d_9_51676" x="313.287" y="149.946" width="90.2119" height="64.8525" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter3_d_9_51676" x="313.287" y="149.946" width="90.2119" height="64.8525" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3.83536" />
         <feGaussianBlur stdDeviation="4.09105" />
@@ -1140,8 +1140,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter4_d_9_51676" x="296.384" y="60.5167" width="70.2663" height="52.2545" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter4_d_9_51676" x="296.384" y="60.5167" width="70.2663" height="52.2545" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="2.63229" />
         <feGaussianBlur stdDeviation="2.80777" />
@@ -1150,8 +1150,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter5_d_9_51676" x="248.221" y="124.961" width="34.3351" height="22.9953" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter5_d_9_51676" x="248.221" y="124.961" width="34.3351" height="22.9953" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="2.2401" />
         <feGaussianBlur stdDeviation="2.38944" />
@@ -1160,8 +1160,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter6_d_9_51676" x="-24.5836" y="43.1" width="74.1711" height="56.8742" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter6_d_9_51676" x="-24.5836" y="43.1" width="74.1711" height="56.8742" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="3" />
         <feGaussianBlur stdDeviation="3.2" />
@@ -1170,8 +1170,8 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_51676" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
-      <filter id="filter7_d_9_51676" x="68.0313" y="105.576" width="46.1053" height="28.0819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter7_d_9_51676" x="68.0313" y="105.576" width="46.1053" height="28.0819" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="2.72458" />
         <feGaussianBlur stdDeviation="2.90622" />
@@ -1181,36 +1181,36 @@ export const VenueManagementProblemsImgMobile = () => (
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_51676" result="shape" />
       </filter>
       <linearGradient id="paint0_linear_9_51676" x1="137.244" y1="91.5345" x2="247.125" y2="114.521" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9A93FF" />
-        <stop offset="1" stop-color="#6042E0" />
+        <stop stopColor="#9A93FF" />
+        <stop offset="1" stopColor="#6042E0" />
       </linearGradient>
       <linearGradient id="paint1_linear_9_51676" x1="16.7215" y1="148.709" x2="-39.5254" y2="164.4" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient id="paint2_linear_9_51676" x1="78.3244" y1="206.811" x2="13.639" y2="228.533" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient id="paint3_linear_9_51676" x1="395.292" y1="153.179" x2="329.478" y2="170.751" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint4_linear_9_51676" x1="355.41" y1="91.0869" x2="302.258" y2="105.754" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint5_linear_9_51676" x1="275.756" y1="126.921" x2="253.755" y2="130.54" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#D8FFCE" />
-        <stop offset="1" stop-color="#DAFAD2" />
+        <stop stopColor="#D8FFCE" />
+        <stop offset="1" stopColor="#DAFAD2" />
       </linearGradient>
       <linearGradient id="paint6_linear_9_51676" x1="45.5379" y1="45.6448" x2="-10.1144" y2="62.2794" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient id="paint7_linear_9_51676" x1="105.431" y1="107.986" x2="74.7842" y2="114.057" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFDADA" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#FFDADA" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <clipPath id="clip0_9_51676">
         <rect width="382" height="241" fill="white" />
@@ -1223,7 +1223,7 @@ export const VenueManagementProblemsImgMobile = () => (
 );
 export const CheckIconPurple = () => (
   <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_804_51841)">
+    <g clipPath="url(#clip0_804_51841)">
       <path d="M3.80533 9C3.50111 9 3.21298 8.88399 3.02835 8.68397L0.529596 5.986C0.452341 5.90268 0.395941 5.80774 0.363618 5.70659C0.331296 5.60545 0.323685 5.50009 0.341222 5.39654C0.358758 5.29299 0.401097 5.19329 0.465819 5.10312C0.530542 5.01295 0.616377 4.93409 0.718419 4.87104C0.820424 4.80774 0.936716 4.7615 1.06063 4.73499C1.18454 4.70848 1.31364 4.70221 1.44052 4.71654C1.5674 4.73088 1.68958 4.76553 1.80004 4.81852C1.9105 4.87151 2.00708 4.9418 2.08424 5.02534L3.7284 6.79922L7.86223 1.37472C7.99932 1.19561 8.21775 1.06826 8.4696 1.02058C8.72145 0.972909 8.98616 1.00881 9.20567 1.12041C9.66234 1.35243 9.80291 1.8439 9.51757 2.21765L4.63335 8.62397C4.54997 8.73382 4.43505 8.82538 4.29856 8.89071C4.16206 8.95604 4.00812 8.99316 3.85008 8.99886C3.8347 9 3.82071 9 3.80533 9Z" fill="#7D63EC" />
     </g>
     <defs>
@@ -1268,7 +1268,7 @@ export const Get1 = () => (
 );
 export const Get2 = () => (
   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_804_52091)">
+    <g clipPath="url(#clip0_804_52091)">
       <path d="M22 29C22.5523 29 23 28.5523 23 28C23 27.4477 22.5523 27 22 27C21.4477 27 21 27.4477 21 28C21 28.5523 21.4477 29 22 29Z" fill="#7D63EC" />
       <path d="M26 29C26.5523 29 27 28.5523 27 28C27 27.4477 26.5523 27 26 27C25.4477 27 25 27.4477 25 28C25 28.5523 25.4477 29 26 29Z" fill="#7D63EC" />
       <path d="M18 29C18.5523 29 19 28.5523 19 28C19 27.4477 18.5523 27 18 27C17.4477 27 17 27.4477 17 28C17 28.5523 17.4477 29 18 29Z" fill="#7D63EC" />
@@ -1293,7 +1293,7 @@ export const Get3 = () => (
 );
 export const Get4 = () => (
   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_804_52105)">
+    <g clipPath="url(#clip0_804_52105)">
       <path
         d="M26.9484 49H23.4909C22.1292 48.9955 20.819 48.479 19.8205 47.5531C18.8221 46.6272 18.2083 45.3597 18.1012 44.0022C18.0827 43.7535 18.1637 43.5077 18.3265 43.3188C18.4892 43.1299 18.7203 43.0134 18.9689 42.9948C19.2175 42.9763 19.4634 43.0573 19.6523 43.22C19.8412 43.3828 19.9577 43.6139 19.9762 43.8625C20.0461 44.748 20.4462 45.575 21.0972 46.1793C21.7483 46.7836 22.6027 47.1212 23.4909 47.125H26.9484C27.8377 47.1226 28.6935 46.7856 29.3457 46.1812C29.9979 45.5767 30.3988 44.749 30.4688 43.8625C30.4873 43.6145 30.6036 43.384 30.792 43.2217C30.9805 43.0594 31.2257 42.9787 31.4738 42.9972C31.7218 43.0157 31.9523 43.132 32.1145 43.3205C32.2768 43.5089 32.3576 43.7542 32.3391 44.0022C32.232 45.3598 31.6181 46.6275 30.6194 47.5535C29.6207 48.4794 28.3103 48.9957 26.9484 49ZM31.4147 40.7397C31.166 40.7397 30.9276 40.6409 30.7518 40.4651C30.576 40.2893 30.4772 40.0508 30.4772 39.8022V36.8406C30.4772 36.6591 30.53 36.4816 30.629 36.3295C30.728 36.1773 30.8691 36.0573 31.035 35.9837C33.5727 34.8561 35.7292 33.0169 37.2433 30.689C38.7574 28.3611 39.5643 25.6442 39.5662 22.8672C39.5662 14.9575 33.1312 8.52344 25.2225 8.52344C17.3137 8.52344 10.8788 14.9575 10.8788 22.8672C10.8807 25.6442 11.6876 28.3611 13.2017 30.689C14.7158 33.0169 16.8723 34.8561 19.41 35.9837C19.5758 36.0574 19.7166 36.1775 19.8155 36.3296C19.9143 36.4817 19.9669 36.6592 19.9669 36.8406V39.8022C19.9669 40.0508 19.8681 40.2893 19.6923 40.4651C19.5165 40.6409 19.278 40.7397 19.0294 40.7397C18.7807 40.7397 18.5423 40.6409 18.3665 40.4651C18.1906 40.2893 18.0919 40.0508 18.0919 39.8022V37.4369C15.3662 36.1007 13.0696 34.0274 11.4625 31.4521C9.85549 28.8769 9.00238 25.9027 9 22.8672C9 13.9244 16.2759 6.64844 25.2188 6.64844C34.1616 6.64844 41.4375 13.9244 41.4375 22.8672C41.4357 25.9023 40.5833 28.8761 38.9771 31.4513C37.3709 34.0266 35.0752 36.1002 32.3503 37.4369V39.8022C32.3503 40.0505 32.2518 40.2887 32.0764 40.4644C31.901 40.6402 31.663 40.7392 31.4147 40.7397Z"
         fill="#7D63EC"

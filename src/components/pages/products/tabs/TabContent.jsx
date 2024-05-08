@@ -11,7 +11,6 @@ const TabContent = ({ content }) => {
     return result;
   };
   const pointsChunks = chunkArray(content.points, 3);
-  console.log(pointsChunks);
   return (
     <div className="custom-tab-content-container">
       <h4 className="text-dark-blue">{content.title}</h4>
@@ -23,10 +22,7 @@ const TabContent = ({ content }) => {
               {pointsChunks.map((item, index) => (
                 <div className="col-6 pe-0" key={index}>
                   {item.map((i, ind) => (
-                    <div
-                      key={ind}
-                      className=" d-flex align-items-center justify-content-start mb-3 text-darkgrey "
-                    >
+                    <div key={ind} className=" d-flex align-items-center justify-content-start mb-3 text-darkgrey ">
                       <GreenCheckIcon />
                       <div className="tab-item-list-text ms-1">{i}</div>
                     </div>
@@ -37,10 +33,7 @@ const TabContent = ({ content }) => {
           </div>
           <div className="tab-list d-none d-md-block">
             {content.points.map((item, index) => (
-              <div
-                key={index}
-                className="d-flex align-items-center mb-3 text-darkgrey "
-              >
+              <div key={index} className="d-flex align-items-center mb-3 text-darkgrey ">
                 <GreenCheckIcon />
                 <div className="ms-1">{item}</div>
               </div>

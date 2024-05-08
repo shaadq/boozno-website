@@ -19,16 +19,24 @@ const Footer = () => {
               </div>
               <div className="footer-socialmedia-items mb-4">
                 <div className="item">
-                  <FacebookIcon />
+                  <Link to={"https://www.facebook.com/Boozno-102555655609164/"} target="_blank">
+                    <FacebookIcon />
+                  </Link>
                 </div>
                 <div className="item">
-                  <TwitterIcon />
+                  <Link to={"@boozno"} target="_blank">
+                    <TwitterIcon />
+                  </Link>
                 </div>
                 <div className="item">
-                  <InstagramIcon />
+                  <Link to={"https://www.instagram.com/boozno"} target="_blank">
+                    <InstagramIcon />
+                  </Link>
                 </div>
                 <div className="item">
-                  <LinkedinIcon />
+                  <Link to={"https://www.linkedin.com/company/boozno"} target="_blank">
+                    <LinkedinIcon />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -49,9 +57,9 @@ const Footer = () => {
                     <Link to={"/aboutus"}>
                       <div className="item">About Us</div>
                     </Link>
-                    <Link to={"/"}>
+                    {/* <Link to={"/"}>
                       <div className="item">Career</div>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="col-6">
@@ -100,12 +108,12 @@ const Footer = () => {
                   <div className="footer-links text-light">
                     <div className="d-flex align-items-center item">
                       <MailIcon />
-                      <div className="ms-2">help@boozno.com</div>
+                      <div className="ms-2">support@boozno.com</div>
                     </div>
-                    <div className="d-flex align-items-center item">
+                    {/* <div className="d-flex align-items-center item">
                       <PhoneIcon />
                       <div className="ms-2">+91 12345 54321</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

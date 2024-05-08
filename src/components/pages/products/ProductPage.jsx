@@ -14,6 +14,7 @@ import value4 from "../../../assets/img/value-4.png";
 import lockImg from "../../../assets/img/privacy-img.svg";
 import ReadyToTry from "../../common/ready-to-try/ReadyToTry";
 import Counter from "../../common/counter/Counter";
+import { Link } from "react-router-dom";
 
 const ProductPage = () => {
   return (
@@ -88,7 +89,9 @@ const ProductPage = () => {
                 <div className="section-subtitle text-center text-lg-start mb-4">
                   We are a small but growing team. Our expertise <br /> includes bringing efficiency to venue management <br /> tasks and ensuring seamless operations for our clients <br /> with personalised and reliable solutions.
                 </div>
-                <button className="btn btn-primary px-4 border-rad-45 d-none d-lg-block">Talk to Sales</button>
+                <Link to={"/talktosales"}>
+                  <button className="btn btn-primary px-4 border-rad-45 d-none d-lg-block">Talk to Sales</button>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
@@ -122,7 +125,9 @@ const ProductPage = () => {
                   </div>
                 </div>
               </div>
-              <button className="btn btn-primary w-100 py-3 border-rad-45 d-lg-none">Talk to Sales</button>
+              <Link to={"/talktosales"}>
+                <button className="btn btn-primary w-100 py-3 border-rad-45 d-lg-none">Talk to Sales</button>
+              </Link>
             </div>
           </div>
         </div>

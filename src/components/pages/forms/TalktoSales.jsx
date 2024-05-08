@@ -113,29 +113,16 @@ const TalktoSales = () => {
           <div className="dynamic-form-wrapper">
             <div className="row">
               <div className="col-lg-8">
-                <h1 className="section-title text-dark-blue text-center text-lg-start">
-                  Talk to Sales
-                </h1>
-                <p className="section-subtitle text-center text-lg-start py-3">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea.
-                </p>
+                <h1 className="section-title text-dark-blue text-center text-lg-start">Talk to Sales</h1>
+                <p className="section-subtitle text-center text-lg-start py-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
 
                 <form onSubmit={handleSubmit}>
                   <div className="row mb-2">
                     {formFields.map((data, index) => (
                       <div className={`${data.colClass} mb-4`} key={index}>
-                        <label className="form-label text-grey2 fw-semibold">
-                          {data.label}
-                        </label>
+                        <label className="form-label text-grey2 fw-semibold">{data.label}</label>
                         {data.type === "select" ? (
-                          <select
-                            name={data.name}
-                            className="form-select custom-form-input"
-                            defaultValue={data.options[0].value}
-                            value={formData[data.name]}
-                            onChange={inputChangeHandler}
-                          >
+                          <select name={data.name} className="form-select custom-form-input" value={formData[data.name]} onChange={inputChangeHandler}>
                             {data.options.map((op, i) => (
                               <option value={op.value} key={i}>
                                 {op.option}
@@ -143,24 +130,13 @@ const TalktoSales = () => {
                             ))}
                           </select>
                         ) : (
-                          <input
-                            type={data.type}
-                            name={data.name}
-                            className="form-control custom-form-input"
-                            placeholder={data.placeholder}
-                            value={formData[data.name]}
-                            onChange={inputChangeHandler}
-                            required
-                          />
+                          <input type={data.type} name={data.name} className="form-control custom-form-input" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} required />
                         )}
                       </div>
                     ))}
                   </div>
 
-                  <button
-                    type="submit"
-                    className="btn btn-primary border-rad-45 w-100"
-                  >
+                  <button type="submit" className="btn btn-primary border-rad-45 w-100">
                     {isSubmitting ? (
                       <>
                         <Spinner animation="border" size="sm" />
