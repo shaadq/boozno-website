@@ -10,7 +10,7 @@ const ThankyouModal = ({ show, setShow }) => {
   const handleShow = () => setShow(true);
   return (
     <div>
-      <Modal show={show} size="" onHide={handleClose} centered>
+      <Modal className="custom-modal-wrapper" show={show} size="" onHide={handleClose} centered>
         <Modal.Header closeButton>{/* <Modal.Title>Modal heading</Modal.Title> */}</Modal.Header>
         <Modal.Body>
           <div className="custom-modal-body">

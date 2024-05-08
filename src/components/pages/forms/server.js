@@ -39,7 +39,7 @@ app.post("/send-email", async (req, res) => {
   try {
     const { subject, contactform, talksalesform, scheduleform, firstName, lastName, emailAddress, phoneNumber, message, companyName, teamSize, date, time } = req.body;
     const mailOptions = {
-      from: "shaad.q@intelegain.com", // Your email address
+      from: "shaadqureshi1709@gmail.com", // Your email address
       to: "shaadqureshi1709@gmail.com", // Recipient's email address
       subject: `Boozno: ${subject}`,
       text: `
@@ -47,30 +47,30 @@ Hi Boozno,
 ${
   talksalesform
     ? `
-We have received an inquiry about scheduling a demo. Below are the details:
+We have received an inquiry about Talking to our Sales Team. Below are the details:
 
 First Name: ${firstName}
 Last Name: ${lastName}
 Email: ${emailAddress}
 Phone: ${phoneNumber}
 Company name: ${companyName}
-Team Size: ${teamSize} people
+Team size: ${teamSize} people
 `
     : scheduleform
     ? `
-We have received an inquiry about talking to our sales team. Below are the details:
+We have received an inquiry about Scheduling a Demo. Below are the details:
 
 First Name: ${firstName}
 Last Name: ${lastName}
 Email: ${emailAddress}
 Phone: ${phoneNumber}
 Company name: ${companyName}
-Team Size: ${teamSize} people
+Team size: ${teamSize} people
 Date: ${date}
 Time: ${time}`
     : contactform
     ? `
-We have received a contact inquiry message. Below are the details: 
+We have received a Contact inquiry message. Below are the details: 
 
 First Name: ${firstName}
 Last Name: ${lastName}

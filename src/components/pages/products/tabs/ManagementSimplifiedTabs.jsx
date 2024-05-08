@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import bookingimg from "../../../../assets/img/Booking.svg";
 import availabilityimg from "../../../../assets/img/availabilitycalender.svg";
 import inquiriesimg from "../../../../assets/img/inquiries.svg";
@@ -96,6 +96,19 @@ const ManagementSimplifiedTabs = () => {
   const handleItemClick = (itemTitle) => {
     setTabList((prevState) => prevState.map((item) => (item.title === itemTitle ? { ...item, active: true } : { ...item, active: false })));
   };
+
+  // Preload SVGs using useEffect
+  useEffect(() => {
+    const preloadImages = () => {
+      Object.keys(tabContent).forEach((key) => {
+        const img = new Image();
+        img.src = tabContent[key].img; // Preload the SVG source
+      });
+    };
+
+    preloadImages(); // Call the preloading function once when the component mounts
+  }, []); // Empty dependency array to ensure it only runs once when the component mounts
+
   return (
     <div className="custom-tab-wrapper">
       <div className="custom-tab-list">

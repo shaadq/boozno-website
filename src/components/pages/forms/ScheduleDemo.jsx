@@ -92,6 +92,36 @@ const ScheduleDemo = () => {
     return acc;
   }, {});
 
+  // Function to determine the correct suffix for a day
+  function getDaySuffix(day) {
+    if (day % 10 === 1 && day !== 11) {
+      return "st";
+    } else if (day % 10 === 2 && day !== 12) {
+      return "nd";
+    } else if (day % 10 === 3 && day !== 13) {
+      return "rd";
+    } else {
+      return "th";
+    }
+  }
+
+  // Function to format the date in the desired way
+  function formatDate(dateStr) {
+    // Create a new Date object from the given date string
+    const date = new Date(dateStr);
+
+    // Extract the day, month, and year
+    const day = date.getDate();
+    const month = date.toLocaleString("en-GB", { month: "long" });
+    const year = date.getFullYear();
+
+    // Get the correct suffix for the day
+    const daySuffix = getDaySuffix(day);
+
+    // Return the formatted date string
+    return `${day}${daySuffix}-${month}-${year}`;
+  }
+
   const [formData, setFormData] = useState(initialFormData);
 
   const inputChangeHandler = (e) => {
@@ -112,7 +142,7 @@ const ScheduleDemo = () => {
       phoneNumber: formData.phoneNumber,
       companyName: formData.companyName,
       teamSize: formData.size,
-      date: formData.date,
+      date: formatDate(formData.date),
       time: formData.time,
     };
 
@@ -144,38 +174,18 @@ const ScheduleDemo = () => {
           <div className="dynamic-form-wrapper">
             <div className="row">
               <div className="col-lg-8">
-                <h1 className="section-title text-dark-blue text-center text-lg-start">
-                  Schedule Demo
-                </h1>
-                <p className="section-subtitle text-center text-lg-start py-3">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea.
-                </p>
+                <h1 className="section-title text-dark-blue text-center text-lg-start">Schedule Demo</h1>
+                <p className="section-subtitle text-center text-lg-start py-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
 
                 <form onSubmit={handleSubmit}>
                   <div className="row mb-2">
                     {formFields.map((data, index) => (
                       <div className={`${data.colClass} mb-4`} key={index}>
-                        <label className="form-label text-grey2 fw-semibold">
-                          {data.label}
-                        </label>
+                        <label className="form-label text-grey2 fw-semibold">{data.label}</label>
                         {data.type === "textarea" ? (
-                          <textarea
-                            className="form-control"
-                            name={data.name}
-                            rows="3"
-                            placeholder={data.placeholder}
-                            value={formData[data.name]}
-                            onChange={inputChangeHandler}
-                            required
-                          ></textarea>
+                          <textarea className="form-control" name={data.name} rows="3" placeholder={data.placeholder} value={formData[data.name]} onChange={inputChangeHandler} required></textarea>
                         ) : data.type === "select" ? (
-                          <select
-                            name={data.name}
-                            className="form-select custom-form-input"
-                            value={formData[data.name]}
-                            onChange={inputChangeHandler}
-                          >
+                          <select name={data.name} className="form-select custom-form-input" value={formData[data.name]} onChange={inputChangeHandler}>
                             {data.options.map((op, i) => (
                               <option value={op.value} key={i}>
                                 {op.option}
@@ -198,10 +208,7 @@ const ScheduleDemo = () => {
                     ))}
                   </div>
 
-                  <button
-                    type="submit"
-                    className="btn btn-primary border-rad-45 w-100"
-                  >
+                  <button type="submit" className="btn btn-primary border-rad-45 w-100">
                     {isSubmitting ? (
                       <>
                         <Spinner animation="border" size="sm" />
