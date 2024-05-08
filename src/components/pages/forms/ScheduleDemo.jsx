@@ -119,7 +119,7 @@ const ScheduleDemo = () => {
     const daySuffix = getDaySuffix(day);
 
     // Return the formatted date string
-    return `${day}${daySuffix}-${month}-${year}`;
+    return `${day}${daySuffix} ${month}, ${year}`;
   }
 
   const [formData, setFormData] = useState(initialFormData);

@@ -16,7 +16,10 @@ const ThankyouModal = ({ show, setShow }) => {
           <div className="custom-modal-body">
             <img src={img} alt="" className="mb-3" />
             <h1 className="section-title text-dark-blue">Thank You</h1>
-            <p className="section-subtitle">Thank you for your request and interest in collaboration with us. We will get back to you as quickly as we can.</p>
+            <p className="section-subtitle">
+              Thank you for your request and interest in collaboration with us. <br />
+              We will get back to you as quickly as we can.
+            </p>
           </div>
         </Modal.Body>
       </Modal>

@@ -140,8 +140,8 @@ const ProductPage = () => {
         <div className="container">
           <div className="benefits-section-wrapper">
             <div className="benefits-bg"></div>
-            <h1 className="section-title text-white mt-lg-4 mb-3">Benefits of using Boozno</h1>
-            <div className="section-subtitle text-white mb-4">
+            <h1 className="section-title text-white mt-lg-4 mb-3 mb-lg-4">Benefits of using Boozno</h1>
+            <div className="section-subtitle text-white mb-4 mb-lg-5">
               Elevate your venue's success story with Boozno, where efficiency isn't just a goal; it's a guarantee. <br /> Lead the way to profit perfection, making every management task a breeze.
             </div>
             <div className="solutions-benefits-wrapper">
@@ -149,7 +149,7 @@ const ProductPage = () => {
                 <div className="col-6 col-lg-3 border-bottom-lg-none border-bottom border-right border-grey">
                   <div className="benefit-item text-center mb-3 mb-lg-0">
                     <div className="perc-title text-purple">
-                      <Counter from={0} to={28} duration={2000} />%
+                      <Counter from={0} to={28} duration={1700} />%
                     </div>
                     <div className="text-dark-blue">
                       Increase in <br className="d-block d-lg-none" /> monthly <br className="d-none d-lg-block" /> sales
@@ -159,7 +159,7 @@ const ProductPage = () => {
                 <div className="col-6 col-lg-3 border-bottom-lg-none border-bottom border-right-lg border-grey">
                   <div className="benefit-item text-center ">
                     <div className="perc-title text-purple">
-                      <Counter from={0} to={33} duration={2000} />%
+                      <Counter from={0} to={33} duration={1800} />%
                     </div>
                     <div className="text-dark-blue">
                       Improvement in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> productivity
@@ -169,7 +169,7 @@ const ProductPage = () => {
                 <div className="col-6 col-lg-3  border-right border-grey">
                   <div className="benefit-item text-center mt-3 mt-lg-0">
                     <div className="perc-title text-purple">
-                      <Counter from={0} to={68} duration={2000} />%
+                      <Counter from={0} to={68} duration={1900} />%
                     </div>
                     <div className="text-dark-blue">
                       More accuracy in <br className="d-block d-lg-none" /> sales <br className="d-none d-lg-block" /> forecasting

@@ -11,6 +11,7 @@ import RightAnswer from "../../common/right-answer/RightAnswer";
 import PlanCard from "./PlanCard";
 import "./Pricing.scss";
 import { featureList, plansList, planCards } from "./data";
+import { Link } from "react-router-dom";
 
 const PricingPage = () => {
   const [planShow, setPlanShow] = useState(false);
@@ -110,7 +111,9 @@ const PricingPage = () => {
                   <p className="text-grey2">For an enterprise solution, get in touch with us</p>
                 </div>
 
-                <button className="btn btn-outline-success border-rad-45 px-4">Get In Touch</button>
+                <Link to={"/contactus"}>
+                  <button className="btn btn-outline-success border-rad-45 px-4">Get In Touch</button>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
@@ -120,7 +123,9 @@ const PricingPage = () => {
                   <h4 className="text-dark-blue">First time with Boozno</h4>
                   <p className="text-grey2">Take your business to new heights with Boozno and enjoy a trial plan along with other valuable resources.</p>
                 </div>
-                <button className="btn btn-success border-rad-45 px-4">Ask For Trial</button>
+                <Link to={"/talktosales"}>
+                  <button className="btn btn-success border-rad-45 px-4">Ask For Trial</button>
+                </Link>
               </div>
             </div>
           </div>
