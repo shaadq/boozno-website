@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div className="col-md-4">
               <div className="row">
-                <div className="text-white footer-link-title">Usefull Links</div>
+                <div className="text-white footer-link-title">Useful Links</div>
                 <div className="col-6">
                   <div className="footer-links text-light">
                     <Link to={"/"}>
@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-dark-blue py-3 text-white text-center">© 2023 Boozno Technologies Pvt. Ltd. All rights reserved. </div>
+      <div className="bg-dark-blue py-3 text-white text-center">© 2024 Boozno Technologies Pvt. Ltd. All rights reserved. </div>
     </footer>
   );
 };

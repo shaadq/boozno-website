@@ -53,14 +53,14 @@ const ManagementSimplifiedTabs = () => {
       title: "Availability Calender",
       icon: <AvailabilityCalenderIcon />,
       iconActive: <AvailabilityCalenderActiveIcon />,
-      active: false,
+      active: true,
       content: <TabContent content={tabContent.AvailabilityCalender} />,
     },
     {
       title: "Inquiries",
       icon: <InquiryIcon />,
       iconActive: <InquiryIconActive />,
-      active: true,
+      active: false,
       content: <TabContent content={tabContent.Inquiries} />,
     },
     {
