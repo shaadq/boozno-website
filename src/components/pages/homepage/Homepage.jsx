@@ -362,7 +362,7 @@ const Homepage = () => {
                     <div className="mb-5">
                       Find the best plan for your <br className="d-none d-md-block" /> venue management
                     </div>
-                    <Link to={"/pricing"} className="w-100">
+                    <Link to={"/pricing"} className="w-100 mt-lg-5">
                       <div className="view-plan-wrapper text-dark-blue">
                         <h6>View our Plans </h6>
                         <TopRightArrowIcon />
@@ -374,7 +374,7 @@ const Homepage = () => {
                     <div className="mb-5">
                       Get personalized advice by <br className="d-none d-md-block" /> our venue experts for tailored <br className="d-none d-md-block" /> insights
                     </div>
-                    <Link to={"/talktosales"} className="w-100">
+                    <Link to={"/talktosales"} className="w-100 mt-lg-5">
                       <div className="view-plan-wrapper text-dark-blue">
                         <h6>Talk to our Sales </h6>
                         <TopRightArrowIcon />
